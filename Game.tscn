@@ -208,7 +208,7 @@ position = Vector2( 1694.46, 740.048 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 2 )
 animation = "New Anim"
-frame = 49
+frame = 5
 playing = true
 offset = Vector2( -128, -128 )
 
@@ -393,10 +393,6 @@ custom_fonts/font = SubResource( 16 )
 pressed = true
 enabled_focus_mode = 0
 text = "Music"
-
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.0218153, -0.796095, 0.604779, 0.0286977, 0.605172, 0.795577, -0.99935, 0, 0.0360481, 10.3387, 0, 0 )
-shadow_enabled = true
 [connection signal="pressed" from="IndiceArea" to="." method="_on_IndiceArea_pressed"]
 [connection signal="button_down" from="Instruction" to="." method="_on_Instruction_button_down"]
 [connection signal="pressed" from="Instruction" to="." method="_on_Instruction_pressed"]
