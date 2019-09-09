@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=89 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://Ubuntu-M.ttf" type="DynamicFontData" id=2]
@@ -70,6 +70,7 @@
 [ext_resource path="res://Music.ogg" type="AudioStream" id=68]
 [ext_resource path="res://Direction.obj" type="ArrayMesh" id=69]
 [ext_resource path="res://Mediatheque.obj" type="ArrayMesh" id=70]
+[ext_resource path="res://Texture.png" type="Texture" id=71]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -172,6 +173,10 @@ font_data = ExtResource( 2 )
 flags_unshaded = true
 albedo_color = Color( 1, 0, 0, 1 )
 
+[sub_resource type="SpatialMaterial" id=17]
+flags_unshaded = true
+albedo_texture = ExtResource( 71 )
+
 [sub_resource type="DynamicFont" id=16]
 size = 60
 font_data = ExtResource( 2 )
@@ -203,7 +208,7 @@ position = Vector2( 1694.46, 740.048 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 2 )
 animation = "New Anim"
-frame = 40
+frame = 49
 playing = true
 offset = Vector2( -128, -128 )
 
@@ -368,7 +373,7 @@ material/0 = SubResource( 15 )
 
 [node name="Mediatheque" type="MeshInstance" parent="."]
 mesh = ExtResource( 70 )
-material/0 = null
+material/0 = SubResource( 17 )
 
 [node name="Spatial" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0 )
