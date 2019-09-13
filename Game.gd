@@ -9,7 +9,7 @@ var toggle_answer = false
 
 var forcedCam = false
 var musicOn = true
-var instruction = ["", "Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
+var instruction = ["", "Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
 var indice = ["", "Appuyez ici ou en bas pour fermer l'indice, puis flèche de droite.", "Aucun indice disponible.", "Aucun indice disponible.", "Aucun indice disponible.", "Aucun indice disponible.", "Calcul mental.", "Couleur.", "Acronyme"]
 var answers = ["", "", "", "", "", "", "4", "blanc", "vsg"]
 
@@ -51,7 +51,7 @@ func _process(delta):
 	$Camera2.rotate_y(.5*delta)
 	$Spatial.rotate_y(.4*delta)
 	
-	$ProgressBar.value = message
+	$ProgressBar.value = message - 5
 		
 	if message == lock:
 		$Right.disabled = true
