@@ -9,13 +9,17 @@ var toggle_answer = false
 
 var forcedCam = false
 var musicOn = true
-var easyQuestions = ["", "Appuyez ici pour lire l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3"]
-var hardQuestions = ["", "HARD Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Enigme 3"]
+var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3"]
 
-var instruction = easyQuestions
+var easyQuestions = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?"]
+var hardQuestions = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?"]
 
-var indice = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer la question, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\nQui suis-je ?", "Acronyme"]
-var answers = ["", "", "", "", "", "", "hobbit", "gandalf", "vsg"]
+var question = easyQuestions
+
+var easyAnswers = ["", "", "", "", "", "", "hobbit", "gandalf", "nain", "elfe", "orque", "dragon", "anneau"]
+var hardAnswers = ["", "", "", "", "", "", "galadriel", "meldo", "aragorn", "smaug", "arachne", "balrog", "gollum"]
+
+var answers = easyAnswers
 
 var easy = true
 
@@ -45,7 +49,7 @@ func _process(delta):
 		$Interface/Left.disabled = true
 	
 	$Interface/Instruction.text = instruction[message]
-	$Interface/IndiceArea.text = indice[message]
+	$Interface/IndiceArea.text = question[message]
 	
 	if message == lock:
 		$Interface/Answer.visible = true
@@ -160,13 +164,13 @@ func _on_DisableInterface_pressed():
 	$Map.visible = false
 
 func _on_Child_pressed():
-	instruction = easyQuestions
-	easy = true
+	question = easyQuestions
+	answers = easyAnswers
 	$Difficulty.visible = false
 	$Interface.visible = true
 
 func _on_Adult_pressed():
-	instruction = hardQuestions
-	easy = false
+	question = hardQuestions
+	answers = hardAnswers
 	$Difficulty.visible = false
 	$Interface.visible = true
