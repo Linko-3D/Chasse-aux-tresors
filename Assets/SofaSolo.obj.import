@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SofaSolo.obj-5d6f23b5a37405504063525da35bb3a4.mesh"
+
+[deps]
+
+files=[ "res://.import/SofaSolo.obj-5d6f23b5a37405504063525da35bb3a4.mesh" ]
+
+source_file="res://Assets/SofaSolo.obj"
+dest_files=[ "res://.import/SofaSolo.obj-5d6f23b5a37405504063525da35bb3a4.mesh", "res://.import/SofaSolo.obj-5d6f23b5a37405504063525da35bb3a4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -26,13 +26,13 @@ func _ready():
 func _process(delta):
 	
 	if message == 5:
-		$Spatial/CameraIntro.current = true
+		pass
 	if message == 6:
-		$Camera1.current = true
-		$Camera1/Travelling.play("Path1")
+		pass
+		#$Camera1/Travelling.play("Path1")
 	if message == 7:
-		$Camera1.current = true
-		$Camera1/Travelling.play("Path2")
+		pass
+		#$Camera1/Travelling.play("Path2")
 	
 	if message == 1:
 		$Left.disabled = true
@@ -47,9 +47,6 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
-	
-	$Camera2.rotate_y(.5*delta)
-	$Spatial.rotate_y(.4*delta)
 	
 	$ProgressBar.value = message - 5
 		
@@ -146,3 +143,11 @@ func _on_CheckBox_pressed():
 	else:
 		$Music.play()
 		musicOn = true
+
+func _on_DisplayMap_pressed():
+	$Map.visible = true
+	$DisableInterface.visible = true
+
+func _on_DisableInterface_pressed():
+	$DisableInterface.visible = false
+	$Map.visible = false

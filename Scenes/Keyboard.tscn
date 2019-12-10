@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Keyboard.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Materials/Black.tres" type="Material" id=2]
+
+[node name="Keyboard" type="MeshInstance"]
+use_in_baked_light = true
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )

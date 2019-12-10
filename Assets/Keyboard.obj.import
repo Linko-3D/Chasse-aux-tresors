@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Keyboard.obj-973045bf28e344ce133100a11bc80b50.mesh"
+
+[deps]
+
+files=[ "res://.import/Keyboard.obj-973045bf28e344ce133100a11bc80b50.mesh" ]
+
+source_file="res://Assets/Keyboard.obj"
+dest_files=[ "res://.import/Keyboard.obj-973045bf28e344ce133100a11bc80b50.mesh", "res://.import/Keyboard.obj-973045bf28e344ce133100a11bc80b50.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

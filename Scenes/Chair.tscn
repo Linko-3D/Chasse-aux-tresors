@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Chair.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Materials/White.material" type="Material" id=2]
+[ext_resource path="res://Assets/Materials/Metal.material" type="Material" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.399619, 0.371273, 0.456384 )
+
+[node name="Chair" type="MeshInstance"]
+use_in_baked_light = true
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
+material/1 = ExtResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379564, -0.0337724 )
+shape = SubResource( 1 )

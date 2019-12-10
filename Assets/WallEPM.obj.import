@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/WallEPM.obj-fe9f4a8b7a937704a39844d79218560f.mesh"
+
+[deps]
+
+files=[ "res://.import/WallEPM.obj-fe9f4a8b7a937704a39844d79218560f.mesh" ]
+
+source_file="res://Assets/WallEPM.obj"
+dest_files=[ "res://.import/WallEPM.obj-fe9f4a8b7a937704a39844d79218560f.mesh", "res://.import/WallEPM.obj-fe9f4a8b7a937704a39844d79218560f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

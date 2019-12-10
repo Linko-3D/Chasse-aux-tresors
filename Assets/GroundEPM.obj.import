@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/GroundEPM.obj-bc084085f581fd03a9635ab3f89c8426.mesh"
+
+[deps]
+
+files=[ "res://.import/GroundEPM.obj-bc084085f581fd03a9635ab3f89c8426.mesh" ]
+
+source_file="res://Assets/GroundEPM.obj"
+dest_files=[ "res://.import/GroundEPM.obj-bc084085f581fd03a9635ab3f89c8426.mesh", "res://.import/GroundEPM.obj-bc084085f581fd03a9635ab3f89c8426.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

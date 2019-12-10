@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mouse.obj-0c2d4ad66c14ca55cc2bc9ae9587f39e.mesh"
+
+[deps]
+
+files=[ "res://.import/Mouse.obj-0c2d4ad66c14ca55cc2bc9ae9587f39e.mesh" ]
+
+source_file="res://Assets/Mouse.obj"
+dest_files=[ "res://.import/Mouse.obj-0c2d4ad66c14ca55cc2bc9ae9587f39e.mesh", "res://.import/Mouse.obj-0c2d4ad66c14ca55cc2bc9ae9587f39e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/DeskEPM.obj-885fdd4c60bb4c9639910c3ed7fe182c.mesh"
+
+[deps]
+
+files=[ "res://.import/DeskEPM.obj-885fdd4c60bb4c9639910c3ed7fe182c.mesh" ]
+
+source_file="res://Assets/DeskEPM.obj"
+dest_files=[ "res://.import/DeskEPM.obj-885fdd4c60bb4c9639910c3ed7fe182c.mesh", "res://.import/DeskEPM.obj-885fdd4c60bb4c9639910c3ed7fe182c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Materials/White.material" type="Material" id=1]
+[ext_resource path="res://Assets/Shelf.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Materials/Books.tres" type="Material" id=3]
+
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1.10378, 0.249935 )
+
+[node name="Shelf" type="MeshInstance"]
+use_in_baked_light = true
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09712, 0 )
+shape = SubResource( 1 )
