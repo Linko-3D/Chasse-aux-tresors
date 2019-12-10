@@ -1,7 +1,6 @@
 extends Control
 
 var message = 1
-var maxmessage = 9
 var lock = 6
 var questionStart = lock
 var toggle_instruction = false
@@ -9,9 +8,9 @@ var toggle_answer = false
 
 var forcedCam = false
 var musicOn = true
-var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3"]
+var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7"]
 
-var easyQuestions = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?"]
+var easyQuestions = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?", "Je suis vieux et sage\nJe ne fais pas mon âge\nAux autres races je fais mes adieux\nEt m’en vais quitter la Terre du Milieu\n\nQui-suis-je ?", "Mon premier est précieux\nTu poses des questions avec mon second\nMon tout est le nom d’un animal\nMais aussi d’une créature du mal\n\nQui suis-je ?"]
 var hardQuestions = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?"]
 
 var question = easyQuestions
@@ -23,7 +22,10 @@ var answers = easyAnswers
 
 var easy = true
 
+var maxmessage = instruction.size()
+
 func _ready():
+	print(instruction.size())
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true

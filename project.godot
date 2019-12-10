@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Ferrat Wars"
+config/name="Chasse aux trésors"
 run/main_scene="res://Map.tscn"
 config/icon="res://icon.png"
 
