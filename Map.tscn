@@ -70,7 +70,8 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-length = 15.0
+resource_name = "Flying"
+length = 100.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:fov")
 tracks/0/interp = 1
@@ -90,10 +91,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5, 7.9, 10.5, 15 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5, 7.9, 10.5, 15, 17.7, 19.7, 21.9, 24.6, 26.5, 28.8, 31.6, 38.5, 44.4, 49.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 1.6, 1.5, 45 ), Vector3( 1.71779, 2.3, 35.324 ), Vector3( 0.84574, 2.3, 27.5899 ), Vector3( -4.32872, 2.3, 21.9893 ), Vector3( -2.92508, 2.3, 8.88644 ) ]
+"values": [ Vector3( 1.6, 1.5, 45 ), Vector3( 1.71779, 2.3, 35.324 ), Vector3( 0.84574, 2.3, 27.5899 ), Vector3( -4.32872, 2.3, 21.9893 ), Vector3( -2.92508, 2.3, 8.88644 ), Vector3( 1.91351, 2.3, 4.16288 ), Vector3( 1.92636, 1.35454, -0.202569 ), Vector3( 2.32667, 2.3, -6.39622 ), Vector3( -5.39628, 2.3, -9.13501 ), Vector3( -1.50363, 2.3, -11.7985 ), Vector3( 3.58687, 2.3, -12.7501 ), Vector3( 7.80875, 2.4236, -19.7322 ), Vector3( 7.87614, 2.47312, -19.9218 ), Vector3( 7.86267, 2.47312, -19.7812 ), Vector3( -1.18025, 1.87219, -24.3008 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("..:rotation_degrees")
@@ -102,10 +103,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 5, 7.9, 10.5, 15 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5, 7.9, 10.5, 15, 17.7, 19.7, 21.9, 24.6, 26.5, 28.8, 31.6, 38.5, 39.5, 44.4, 49.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 0, -35 ), Vector3( -0.204782, 4.21804, 2.77446 ), Vector3( -4.36171, 27.7208, 8.2353 ), Vector3( 0, 0, -9.478 ), Vector3( 0, -24.867, 0 ) ]
+"values": [ Vector3( 0, 0, -35 ), Vector3( -0.204782, 4.21804, 2.77446 ), Vector3( -4.36171, 27.7208, 8.2353 ), Vector3( 0, 0, -4.268 ), Vector3( 5.67833e-007, -24.867, -6.813 ), Vector3( -23.3748, -6.26628, 4.41933 ), Vector3( 23.9525, 21.2344, 2.47551 ), Vector3( 0, 48.342, 16.844 ), Vector3( 7.95139e-016, -0.332, -11.393 ), Vector3( 0, -49.185, 0 ), Vector3( -1.92107, -36.4446, 8.43351 ), Vector3( -5.3667, -11.0397, 6.26529 ), Vector3( -14.472, 140.639, 7.092 ), Vector3( -13.88, 126.978, -9.16395 ), Vector3( -10.9794, 60.0378, -9.41004 ), Vector3( -1.77841, 59.846, -1.17765 ) ]
 }
 
 [node name="Map" type="Spatial"]
@@ -1141,12 +1142,12 @@ extents = Vector3( 18.0327, 2.50071, 49.7401 )
 data = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.871029, -0.161811, 0.463817, 0.142824, 0.986822, 0.0760527, -0.470011, 0, 0.882661, 0.84574, 2.3, 27.5899 )
+transform = Transform( 0.502771, -0.0165048, 0.864262, -0.0205426, 0.999307, 0.0310341, -0.864175, -0.0333572, 0.502084, -1.18025, 1.87219, -24.3008 )
 current = true
 
 [node name="Game" parent="Camera" instance=ExtResource( 27 )]
 
 [node name="CameraAnimation" type="AnimationPlayer" parent="Camera/Game"]
-autoplay = "Intro"
+autoplay = "Flying"
 anims/1 = SubResource( 3 )
-anims/Intro = SubResource( 4 )
+anims/Flying = SubResource( 4 )
