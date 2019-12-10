@@ -9,21 +9,28 @@ var toggle_answer = false
 
 var forcedCam = false
 var musicOn = true
-var instruction = ["", "Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
-var indice = ["", "Appuyez ici ou en bas pour fermer l'indice, puis flèche de droite.", "Aucun indice disponible.", "Aucun indice disponible.", "Aucun indice disponible.", "Aucun indice disponible.", "Calcul mental.", "Couleur.", "Acronyme"]
+var easyQuestions = ["", "Appuyez ici pour lire la question.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
+var hardQuestions = ["", "HARD Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
+
+var instruction = easyQuestions
+
+var indice = ["", "Appuyez ici ou en bas pour fermer la question, puis flèche de droite.", "Aucune question disponible.", "Aucune question disponible.", "Aucune question disponible.", "Aucune question disponible.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant", "Couleur.", "Acronyme"]
 var answers = ["", "", "", "", "", "", "4", "blanc", "vsg"]
 
-func _ready():	
-	$Left.disabled = true
-	$Right.disabled = true
-	$ProgressBar.max_value = maxmessage
-	$Radar.position.x = OS.window_size.x
-	$Radar.position.y = OS.window_size.y - 200
+var easy = true
+
+func _ready():
+	$Interface.visible = false
+	$Interface/Left.disabled = true
+	$Interface/Right.disabled = true
+	$Interface/ProgressBar.max_value = maxmessage
 	
 	$CheckAnswer.margin_top = -300
 	$CheckAnswer.margin_bottom = 100
 
-func _process(delta):
+func _process(delta):	
+	if $CameraAnimation.is_playing() == false:
+		$CameraAnimation.play("1")
 	
 	if message == 5:
 		pass
@@ -35,26 +42,26 @@ func _process(delta):
 		#$Camera1/Travelling.play("Path2")
 	
 	if message == 1:
-		$Left.disabled = true
+		$Interface/Left.disabled = true
 	
-	$Instruction.text = instruction[message]
-	$IndiceArea.text = indice[message]
+	$Interface/Instruction.text = instruction[message]
+	$Interface/IndiceArea.text = indice[message]
 	
 	if message == lock:
-		$Answer.visible = true
+		$Interface/Answer.visible = true
 	else:
-		$Answer.visible = false
+		$Interface/Answer.visible = false
 	
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 	
-	$ProgressBar.value = message - 5
+	$Interface/ProgressBar.value = message - 5
 		
 	if message == lock:
-		$Right.disabled = true
+		$Interface/Right.disabled = true
 		
 	if message == maxmessage:
-		$Right.disabled = true
+		$Interface/Right.disabled = true
 
 func _on_Exit_pressed():
 	get_tree().quit()
@@ -62,31 +69,31 @@ func _on_Exit_pressed():
 func _on_Right_pressed():
 	if message < maxmessage:
 		message += 1
-		$Left.disabled = false
+		$Interface/Left.disabled = false
 	if message == maxmessage:
 		$Right.disabled = true
 
 func _on_Left_pressed():
 	if message > 1:
 		message -= 1
-		$Right.disabled = false
+		$Interface/Right.disabled = false
 
 func _on_Instruction_pressed():
 	if toggle_instruction == false:
-		$Left.disabled = true
-		$Right.disabled = true
+		$Interface/Left.disabled = true
+		$Interface/Right.disabled = true
 		toggle_instruction = true
-		$IndiceArea.visible = true
-		$Answer.disabled = true
+		$Interface/IndiceArea.visible = true
+		$Interface/Answer.disabled = true
 	else:
 		toggle_instruction = false
-		$Left.disabled = false
-		$Right.disabled = false
-		$IndiceArea.visible = false
-		$Answer.disabled = false
+		$Interface/Left.disabled = false
+		$Interface/Right.disabled = false
+		$Interface/IndiceArea.visible = false
+		$Interface/Answer.disabled = false
 
 func _on_IndiceArea_pressed():
-	$Instruction.pressed = false
+	$Interface/Instruction.pressed = false
 	_on_Instruction_pressed()
 
 func _on_Answer_pressed(): #adjust visibility
@@ -94,17 +101,17 @@ func _on_Answer_pressed(): #adjust visibility
 	$GiveAnswer.text = ""
 	
 	if toggle_answer == false:		
-		$Instruction.disabled = true
-		$Left.disabled = true
-		$Right.disabled = true
+		$Interface/Instruction.disabled = true
+		$Interface/Left.disabled = true
+		$Interface/Right.disabled = true
 		$GiveAnswer.visible = true
 		$ValidAnswer.visible = true
 		$ClearAnswer.visible = true
 		toggle_answer = true
 	else:
-		$Instruction.disabled = false
-		$Left.disabled = false
-		$Right.disabled = false
+		$Interface/Instruction.disabled = false
+		$Interface/Left.disabled = false
+		$Interface/Right.disabled = false
 		$GiveAnswer.visible = false
 		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
@@ -121,14 +128,14 @@ func _on_ValidAnswer_pressed():
 	
 func _on_CheckAnswer_pressed():	
 	if toggle_answer == true:
-		$Instruction.disabled = false
-		$Left.disabled = false
-		$Right.disabled = false
+		$Interface/Instruction.disabled = false
+		$Interface/Left.disabled = false
+		$Interface/Right.disabled = false
 		$GiveAnswer.visible = false
 		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
 		$ClearAnswer.visible = false
-		$Answer.pressed = false
+		$Interface/Answer.pressed = false
 		toggle_answer = false
 
 	$GiveAnswer.text = ""
@@ -151,3 +158,16 @@ func _on_DisplayMap_pressed():
 func _on_DisableInterface_pressed():
 	$DisableInterface.visible = false
 	$Map.visible = false
+
+func _on_Child_pressed():
+	instruction = easyQuestions
+	easy = true
+	$Difficulty.visible = false
+	$Interface.visible = true
+
+
+func _on_Adult_pressed():
+	instruction = hardQuestions
+	easy = false
+	$Difficulty.visible = false
+	$Interface.visible = true

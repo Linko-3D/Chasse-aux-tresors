@@ -69,5 +69,6 @@ reload={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/filters/msaa=4
 environment/default_environment="res://default_env.tres"
