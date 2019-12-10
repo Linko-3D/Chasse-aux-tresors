@@ -66,15 +66,15 @@
 [ext_resource path="res://Sprites/Antenna/0061.png" type="Texture" id=64]
 [ext_resource path="res://map.png" type="Texture" id=65]
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=15]
+[sub_resource type="DynamicFont" id=2]
 size = 40
 font_data = ExtResource( 2 )
 
-[sub_resource type="SpriteFrames" id=12]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
 "loop": true,
@@ -82,24 +82,20 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=5]
 size = 100
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=6]
 size = 60
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
-size = 120
-font_data = ExtResource( 2 )
-
 [sub_resource type="DynamicFont" id=7]
-size = 100
+size = 120
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=8]
@@ -107,7 +103,7 @@ size = 100
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 60
+size = 100
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=10]
@@ -115,6 +111,10 @@ size = 60
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=11]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=12]
 size = 50
 font_data = ExtResource( 2 )
 
@@ -151,7 +151,7 @@ margin_top = -350.0
 margin_right = 150.0
 margin_bottom = -200.0
 focus_mode = 0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
 toggle_mode = true
 enabled_focus_mode = 0
 text = "Répondre"
@@ -170,16 +170,16 @@ margin_top = -250.0
 margin_right = 900.0
 margin_bottom = 250.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 2 )
 text = "Aucun indice disponible"
 readonly = true
 
 [node name="Radar" type="AnimatedSprite" parent="Interface"]
 position = Vector2( 1894.98, 879.566 )
 scale = Vector2( 0.95904, 0.95904 )
-frames = SubResource( 12 )
+frames = SubResource( 3 )
 animation = "New Anim"
-frame = 8
+frame = 49
 playing = true
 offset = Vector2( -128, -128 )
 
@@ -204,7 +204,7 @@ margin_left = -1100.0
 margin_top = -200.0
 margin_right = 1100.0
 focus_mode = 0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 toggle_mode = true
 enabled_focus_mode = 0
 text = "Bienvenue à la chasse au trésor (flèche de droite pour continuer)"
@@ -218,7 +218,7 @@ anchor_bottom = 1.0
 margin_top = -200.0
 margin_right = 200.0
 focus_mode = 0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 enabled_focus_mode = 0
 text = "<"
 
@@ -230,7 +230,7 @@ anchor_bottom = 1.0
 margin_left = -200.0
 margin_top = -200.0
 focus_mode = 0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 enabled_focus_mode = 0
 text = ">"
 __meta__ = {
@@ -243,9 +243,12 @@ anchor_right = 0.5
 margin_left = -400.0
 margin_right = 400.0
 margin_bottom = 68.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 min_value = 1.0
 value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Exit" type="Button" parent="."]
 anchor_left = 1.0
@@ -253,7 +256,7 @@ anchor_right = 1.0
 margin_left = -150.0
 margin_bottom = 150.0
 focus_mode = 0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 7 )
 enabled_focus_mode = 0
 text = "X"
 __meta__ = {
@@ -270,7 +273,7 @@ margin_left = -250.0
 margin_top = -200.0
 margin_right = 250.0
 margin_bottom = 20.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
 caret_blink = true
 
 [node name="ValidAnswer" type="Button" parent="."]
@@ -284,7 +287,7 @@ margin_top = -200.0
 margin_right = 500.0
 margin_bottom = 20.0
 focus_mode = 0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
 enabled_focus_mode = 0
 text = "OK"
 
@@ -299,7 +302,7 @@ margin_top = -200.0
 margin_right = -250.0
 margin_bottom = 20.0
 focus_mode = 0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
 enabled_focus_mode = 0
 text = "CLR"
 
@@ -314,7 +317,7 @@ margin_top = -300.0
 margin_right = 550.0
 margin_bottom = 100.0
 focus_mode = 0
-custom_fonts/font = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
 enabled_focus_mode = 0
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
@@ -328,7 +331,7 @@ margin_left = -350.0
 margin_right = -150.0
 margin_bottom = 76.0
 focus_mode = 0
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 11 )
 pressed = true
 enabled_focus_mode = 0
 text = "Music"
@@ -336,7 +339,7 @@ text = "Music"
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 12 )
 text = "Chasse aux trésors
 Tolkien"
 
