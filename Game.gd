@@ -9,13 +9,13 @@ var toggle_answer = false
 
 var forcedCam = false
 var musicOn = true
-var easyQuestions = ["", "Appuyez ici pour lire la question.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
-var hardQuestions = ["", "HARD Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Question 3: quelle est le diminutif de Villeneuve Saint-Georges ?"]
+var easyQuestions = ["", "Appuyez ici pour lire l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3"]
+var hardQuestions = ["", "HARD Appuyez ici pour avoir un indice.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des oeufs au chocolat ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être donnés.", "Donnez les réponses sans majuscules.", "Question 1: que font 2+2 ?", "Question 2: quelle est la couleur du cheval blanc de Henri IV ?", "Enigme 3"]
 
 var instruction = easyQuestions
 
-var indice = ["", "Appuyez ici ou en bas pour fermer la question, puis flèche de droite.", "Aucune question disponible.", "Aucune question disponible.", "Aucune question disponible.", "Aucune question disponible.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant", "Couleur.", "Acronyme"]
-var answers = ["", "", "", "", "", "", "4", "blanc", "vsg"]
+var indice = ["", "Ici sera affiché l'énigme, appuyez en bas pour fermer la question, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\nQui suis-je ?", "Acronyme"]
+var answers = ["", "", "", "", "", "", "hobbit", "gandalf", "vsg"]
 
 var easy = true
 
@@ -28,7 +28,7 @@ func _ready():
 	$CheckAnswer.margin_top = -300
 	$CheckAnswer.margin_bottom = 100
 
-func _process(delta):	
+func _process(delta):
 	if $CameraAnimation.is_playing() == false:
 		$CameraAnimation.play("1")
 	
@@ -164,7 +164,6 @@ func _on_Child_pressed():
 	easy = true
 	$Difficulty.visible = false
 	$Interface.visible = true
-
 
 func _on_Adult_pressed():
 	instruction = hardQuestions
