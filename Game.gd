@@ -50,7 +50,8 @@ func _process(delta):
 			$CameraAnimation.play("3")
 			wasPlayed = true
 		if message == 9:
-			pass
+			$CameraAnimation.play("4")
+			wasPlayed = true
 			#$Camera1/Travelling.play("Path2")
 	
 	if message == 1:
