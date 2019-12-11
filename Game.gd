@@ -1,12 +1,14 @@
 extends Control
 
+var camera
+
 var message = 1
 var lock = 6
 var questionStart = lock
 var toggle_instruction = false
 var toggle_answer = false
 
-var forcedCam = false
+var wasPlayed = false
 var musicOn = true
 var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés dans la médiathèque, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7", "Victoire !"]
 
@@ -25,6 +27,7 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
+	camera = get_tree().get_root().find_node("Camera", true, false)
 	print(instruction.size())
 	$Interface.visible = false
 	$Interface/Left.disabled = true
@@ -36,18 +39,19 @@ func _ready():
 
 func _process(delta):
 	print(message)
-	print(maxmessage)
 	if $CameraAnimation.is_playing() == false:
-		$CameraAnimation.play("1")
-	
-	if message == 5:
-		pass
-	if message == 6:
-		pass
-		#$Camera1/Travelling.play("Path1")
-	if message == 7:
-		pass
-		#$Camera1/Travelling.play("Path2")
+		camera.rotate_y(-.01)
+		
+	if wasPlayed == false:
+		if message == 7:
+			$CameraAnimation.play("2")
+			wasPlayed = true
+		if message == 8:
+			$CameraAnimation.play("3")
+			wasPlayed = true
+		if message == 9:
+			pass
+			#$Camera1/Travelling.play("Path2")
 	
 	if message == 1:
 		$Interface/Left.disabled = true
@@ -75,6 +79,7 @@ func _on_Exit_pressed():
 	get_tree().quit()
 
 func _on_Right_pressed():
+	wasPlayed = false
 	if message < maxmessage:
 		message += 1
 		$Interface/Left.disabled = false
