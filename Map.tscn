@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Mediatheque.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Materials/White.material" type="Material" id=2]
@@ -174,6 +174,88 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector3( 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "5"
+length = 2.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.6, 2.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 5.05717, 2.3, -30.4139 ), Vector3( 3.76726, 2.3, -37.911 ), Vector3( 5.05717, 2.3, -40.7224 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8, 1.6, 2.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -10.2408, 0 ), Vector3( 0, 6.348, 0 ), Vector3( 0, -13.8645, 0 ), Vector3( 0, -10.2408, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "6"
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 5.05717, 2.3, -40.7224 ), Vector3( -19.5559, 2.3, -40.7224 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 89.3632, 0 ), Vector3( 0, 89.3632, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "7"
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -19.3097, 0 ), Vector3( 0, -19.3097, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( -19.5559, 2.3, -40.7224 ), Vector3( -8.00222, 2.3, -48.5682 ) ]
 }
 
 [node name="Map" type="Spatial"]
@@ -1209,7 +1291,7 @@ extents = Vector3( 18.0327, 2.50071, 49.7401 )
 data = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.961362, 0, 0.275287, 0, 1, 0, -0.275287, 0, 0.961362, -1.37472, 2.3, -23.2062 )
+transform = Transform( 0.943745, 0, -0.330674, 0, 1, 0, 0.330674, 0, 0.943745, -8.00222, 2.3, -48.5682 )
 current = true
 
 [node name="Game" parent="Camera" instance=ExtResource( 34 )]
@@ -1220,3 +1302,6 @@ anims/1 = SubResource( 4 )
 anims/2 = SubResource( 3 )
 anims/3 = SubResource( 5 )
 anims/4 = SubResource( 6 )
+anims/5 = SubResource( 7 )
+anims/6 = SubResource( 8 )
+anims/7 = SubResource( 9 )

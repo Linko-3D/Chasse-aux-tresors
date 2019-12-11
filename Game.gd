@@ -52,7 +52,15 @@ func _process(delta):
 		if message == 9:
 			$CameraAnimation.play("4")
 			wasPlayed = true
-			#$Camera1/Travelling.play("Path2")
+		if message == 10:
+			$CameraAnimation.play("5")
+			wasPlayed = true
+		if message == 11:
+			$CameraAnimation.play("6")
+			wasPlayed = true
+		if message == 12:
+			$CameraAnimation.play("7")
+			wasPlayed = true
 	
 	if message == 1:
 		$Interface/Left.disabled = true
