@@ -40,7 +40,7 @@ data = PoolVector3Array( 8.7295, 0, 8.8986, 4.6917, 0, 8.8986, 8.7295, 0, -16.32
 
 [sub_resource type="GIProbeData" id=2]
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 resource_name = "1"
 length = 5.0
 tracks/0/type = "value"
@@ -80,8 +80,7 @@ tracks/2/keys = {
 "values": [ Vector3( 0, 0, -35 ), Vector3( 0, 4.178, 0 ) ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "2"
+[sub_resource type="Animation" id=4]
 length = 5.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -138,7 +137,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=6]
 resource_name = "4"
-length = 14.4
+length = 19.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
 tracks/0/interp = 1
@@ -146,10 +145,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.6, 3.3, 4.4, 6.1, 8.4, 10.1, 11.9, 13.3, 14.7 ),
+"times": PoolRealArray( 0, 1.6, 4, 5, 7.6, 10.9, 13.1, 14.9, 17.8, 19.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 3.36247, 2.3, -0.340739 ), Vector3( 1.36146, 2.3, -5.68707 ), Vector3( -5.06866, 2.3, -8.36024 ), Vector3( -3.77986, 2.3, -11.2762 ), Vector3( 3.72833, 2.3, -12.7041 ), Vector3( 3.94166, 2.3, -21.9536 ), Vector3( -3.28885, 2.3, -23.6572 ), Vector3( -0.699654, 2.3, -28.409 ), Vector3( 5.05717, 2.3, -30.4139 ), Vector3( 4.36831, 2.3, -33.7553 ) ]
+"values": [ Vector3( 3.36247, 2.3, -0.340739 ), Vector3( 1.36146, 2.3, -5.68707 ), Vector3( -5.06866, 2.3, -8.36024 ), Vector3( -3.77986, 2.3, -11.2762 ), Vector3( 3.72833, 2.3, -12.7502 ), Vector3( 3.94166, 2.3, -21.9536 ), Vector3( -3.28885, 2.3, -23.8854 ), Vector3( -0.699652, 2.3, -29.8902 ), Vector3( 5.05717, 2.3, -30.4139 ), Vector3( 4.36831, 2.3, -33.7553 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -158,22 +157,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.6, 3.3, 4.4, 5.5, 6.1, 7.5, 8.4, 9, 10.1, 11.9, 13.3, 14.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 1.6, 3.5, 4.3, 5, 6.3, 7.6, 9.6, 10.9, 11.7, 13.1, 14.5, 15.4, 16.7, 17.8, 18.3, 19.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, -10.052, 0 ), Vector3( 0, 21.3698, 0 ), Vector3( 0, -15.3833, 0 ), Vector3( 0, -39.4966, 0 ), Vector3( 0, -34.9032, 0 ), Vector3( 0, -11.2417, 0 ), Vector3( 0, -10.8968, 0 ), Vector3( 0, 54.4587, 0 ), Vector3( 0, 54.4193, 0 ), Vector3( 0, -10.6374, 0 ), Vector3( 0, -10.3541, 0 ), Vector3( 0, -10.2408, 0 ), Vector3( 0, -10.052, 0 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("..:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector3( 1, 1, 1 ) ]
+"values": [ Vector3( 0, -10.052, 0 ), Vector3( 0, 52.7266, 0 ), Vector3( 0, 8.66388, 0 ), Vector3( 0, -15.3833, 0 ), Vector3( 0, -39.4966, 0 ), Vector3( 0, -34.9032, 0 ), Vector3( 0, -11.2417, 0 ), Vector3( 0, -10.8968, 0 ), Vector3( 0, 54.4587, 0 ), Vector3( 0, 54.4193, 0 ), Vector3( 0, -10.6374, 0 ), Vector3( 0, -10.3541, 0 ), Vector3( 0, -63.3603, 0 ), Vector3( 0, -53.3751, 0 ), Vector3( 0, -17.4529, 0 ), Vector3( 0, -0.864313, 0 ), Vector3( 0, 9.0983, 0 ) ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -1291,15 +1278,16 @@ extents = Vector3( 18.0327, 2.50071, 49.7401 )
 data = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.943745, 0, -0.330674, 0, 1, 0, 0.330674, 0, 0.943745, -8.00222, 2.3, -48.5682 )
+editor/display_folded = true
+transform = Transform( 0.987419, 0, 0.158129, 0, 1, 0, -0.158129, 0, 0.987419, 4.36831, 2.3, -33.7553 )
 current = true
 
 [node name="Game" parent="Camera" instance=ExtResource( 34 )]
 
 [node name="CameraAnimation" type="AnimationPlayer" parent="Camera/Game"]
 autoplay = "1"
-anims/1 = SubResource( 4 )
-anims/2 = SubResource( 3 )
+anims/1 = SubResource( 3 )
+anims/2 = SubResource( 4 )
 anims/3 = SubResource( 5 )
 anims/4 = SubResource( 6 )
 anims/5 = SubResource( 7 )
