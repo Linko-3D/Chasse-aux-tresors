@@ -183,14 +183,15 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.8, 1.6, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.8, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, -10.2408, 0 ), Vector3( 0, 6.348, 0 ), Vector3( 0, -13.8645, 0 ), Vector3( 0, -10.2408, 0 ) ]
+"values": [ Vector3( 0, -10.2408, 0 ), Vector3( 0, 6.348, 0 ), Vector3( 0, -13.8645, 0 ) ]
 }
 
 [sub_resource type="Animation" id=7]
 resource_name = "6"
+length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
 tracks/0/interp = 1
@@ -198,10 +199,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.6, 2.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 5.05717, 2.3, -40.7224 ), Vector3( -19.5559, 2.3, -40.7224 ) ]
+"values": [ Vector3( 5.05717, 2.3, -40.7224 ), Vector3( -8.0698, 2.3, -40.7224 ), Vector3( -12.9924, 2.3, -38.7037 ), Vector3( -19.5559, 2.3, -40.7224 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -210,14 +211,15 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.5, 1.9, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 89.3632, 0 ), Vector3( 0, 89.3632, 0 ) ]
+"values": [ Vector3( 0, 89.3632, 0 ), Vector3( 0, 89.3632, 0 ), Vector3( 0, 112.708, 0 ), Vector3( 0, 83.0603, 0 ) ]
 }
 
 [sub_resource type="Animation" id=8]
 resource_name = "7"
+length = 2.7
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:rotation_degrees")
 tracks/0/interp = 1
@@ -225,10 +227,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, -19.3097, 0 ), Vector3( 0, -19.3097, 0 ) ]
+"values": [ Vector3( 0, -19.3097, 0 ), Vector3( 0, -19.3097, 0 ), Vector3( 0, -45.7127, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:translation")
@@ -237,10 +239,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.2, 2.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -19.5559, 2.3, -40.7224 ), Vector3( -8.00222, 2.3, -48.5682 ) ]
+"values": [ Vector3( -19.5559, 2.3, -40.7224 ), Vector3( -16.0898, 2.3, -45.2921 ), Vector3( -8.00222, 2.3, -48.5682 ) ]
 }
 
 [node name="Map" type="Spatial"]
@@ -1271,7 +1273,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -18 )
 [node name="Lights" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.984069, 0, -0.177786, 0, 1, 0, 0.177786, 0, 0.984069, 5.05717, 2.3, -30.4139 )
+transform = Transform( 0.698257, 0, -0.715848, 0, 1, 0, 0.715848, 0, 0.698257, -8.00222, 2.3, -48.5682 )
 current = true
 
 [node name="Game" parent="Camera" instance=ExtResource( 34 )]

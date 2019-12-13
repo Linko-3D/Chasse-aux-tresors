@@ -59,7 +59,6 @@ margin_right = 900.0
 margin_bottom = 160.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
-readonly = true
 
 [node name="MapMini" type="Sprite" parent="Interface"]
 position = Vector2( 1745.11, 731.547 )
