@@ -33,7 +33,6 @@ func _ready():
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
-	$Interface/ProgressBar.max_value = maxmessage - 6
 	
 	$CheckAnswer.margin_top = -300
 	$CheckAnswer.margin_bottom = 100
@@ -77,9 +76,6 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 	
-	if $Interface/ProgressBar.value < message - 5:
-		$Interface/ProgressBar.value = message - 5
-		
 	if message == lock:
 		$Interface/Right.disabled = true
 		
