@@ -96,7 +96,7 @@ __meta__ = {
 position = Vector2( 122.672, 97.8182 )
 frames = SubResource( 3 )
 animation = "spin"
-frame = 29
+frame = 27
 playing = true
 
 [node name="Interface" type="Control" parent="."]
@@ -130,11 +130,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MapMini" type="Sprite" parent="Interface"]
-position = Vector2( 1819.38, 674.981 )
-scale = Vector2( 0.570866, 0.570866 )
-texture = ExtResource( 3 )
-
 [node name="DisplayMap" type="Button" parent="Interface"]
 margin_left = 1457.0
 margin_top = 513.0
@@ -146,6 +141,11 @@ flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="MapMini" type="Sprite" parent="Interface/DisplayMap"]
+position = Vector2( 362.38, 161.981 )
+scale = Vector2( 0.570866, 0.570866 )
+texture = ExtResource( 3 )
 
 [node name="Instruction" type="Button" parent="Interface"]
 anchor_left = 0.5
@@ -336,7 +336,7 @@ focus_mode = 0
 enabled_focus_mode = 0
 flat = true
 
-[node name="Difficulty" type="Label" parent="."]
+[node name="Difficulty" type="Control" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -345,6 +345,24 @@ margin_left = -151.253
 margin_top = -189.841
 margin_right = 130.747
 margin_bottom = -121.841
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Difficulty"]
+position = Vector2( 150.387, 194.938 )
+scale = Vector2( 0.413924, 0.399923 )
+texture = ExtResource( 65 )
+
+[node name="Difficulty" type="Label" parent="Difficulty"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.782
+margin_top = -33.1855
+margin_right = 153.218
+margin_bottom = 34.8145
 text = "Difficulté:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -357,6 +375,7 @@ margin_bottom = 221.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Enfant"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -368,6 +387,21 @@ margin_bottom = 389.688
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Adulte"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Restart" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 166.0
+margin_right = 397.0
+margin_bottom = 321.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Recommencer"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -385,3 +419,4 @@ __meta__ = {
 [connection signal="pressed" from="DisableInterface" to="." method="_on_DisableInterface_pressed"]
 [connection signal="pressed" from="Difficulty/Child" to="." method="_on_Child_pressed"]
 [connection signal="pressed" from="Difficulty/Adult" to="." method="_on_Adult_pressed"]
+[connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]

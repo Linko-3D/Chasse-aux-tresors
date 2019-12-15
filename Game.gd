@@ -194,3 +194,7 @@ func _on_Adult_pressed():
 	answers = hardAnswers
 	$Difficulty.visible = false
 	$Interface.visible = true
+
+
+func _on_Restart_pressed():
+	get_tree().reload_current_scene()
