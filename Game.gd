@@ -27,18 +27,28 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
-	#$Ring.play("ring")
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	print(instruction.size())
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
-	
-	$CheckAnswer.margin_top = -300
-	$CheckAnswer.margin_bottom = 100
 
 func _process(delta):
-	print(message)
+	if lock > 6:
+		$Rings/Ring1.play("metal")
+	if lock > 7:
+		$Rings/Ring2.play("metal")
+	if lock > 8:
+		$Rings/Ring3.play("metal")
+	if lock > 9:
+		$Rings/Ring4.play("metal")
+	if lock > 10:
+		$Rings/Ring5.play("metal")
+	if lock > 11:
+		$Rings/Ring6.play("metal")
+	if lock > 12:
+		$Rings/Ring7.play("metal")
+	
 	if $CameraAnimation.is_playing() == false:
 		camera.rotate_y(-.01)
 		
@@ -141,10 +151,10 @@ func _on_Answer_pressed(): #adjust visibility
 func _on_ValidAnswer_pressed():
 	$CheckAnswer.visible = true
 	if $GiveAnswer.text == answers[message] and message == lock:
-		$CheckAnswer.text = "Bonne réponse !"
+		$CheckAnswer/CheckAnswerText.text = "Bonne réponse !"
 		lock += 1
 	else:
-		$CheckAnswer.text = "Mauvaise réponse !"
+		$CheckAnswer/CheckAnswerText.text = "Mauvaise réponse !"
 	
 func _on_CheckAnswer_pressed():	
 	if toggle_answer == true:

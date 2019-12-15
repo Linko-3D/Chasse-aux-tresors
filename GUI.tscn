@@ -272,6 +272,9 @@ margin_right = 1820.0
 margin_bottom = 680.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1870.68, 65.4096 )
@@ -346,6 +349,25 @@ margin_right = 550.0
 margin_bottom = 100.0
 focus_mode = 0
 enabled_focus_mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="CheckAnswer"]
+position = Vector2( 549.576, 199.498 )
+rotation = 4.71239
+scale = Vector2( 0.52327, 1.07782 )
+texture = ExtResource( 65 )
+
+[node name="CheckAnswerText" type="Label" parent="CheckAnswer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Mauvaise réponse !"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
@@ -466,52 +488,52 @@ __meta__ = {
 }
 
 [node name="Ring1" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 600, 100 )
+position = Vector2( 598.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 27
+frame = 4
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 750, 100 )
+position = Vector2( 748.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 27
+frame = 4
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 900, 100 )
+position = Vector2( 898.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 26
+frame = 3
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1050, 100 )
+position = Vector2( 1048.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 27
+frame = 4
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1200, 100 )
+position = Vector2( 1198.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 26
+frame = 3
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1350, 100 )
+position = Vector2( 1348.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 27
+frame = 4
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1500, 100 )
+position = Vector2( 1498.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 26
+frame = 3
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
