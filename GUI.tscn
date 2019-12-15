@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -65,26 +65,6 @@
 [ext_resource path="res://Sprites/Ring/0056.png" type="Texture" id=63]
 [ext_resource path="res://Sprites/Ring/0054.png" type="Texture" id=64]
 [ext_resource path="res://Sprites/Paper.jpg" type="Texture" id=65]
-[ext_resource path="res://Sprites/Minimap/0004.png" type="Texture" id=66]
-[ext_resource path="res://Sprites/Minimap/0009.png" type="Texture" id=67]
-[ext_resource path="res://Sprites/Minimap/0007.png" type="Texture" id=68]
-[ext_resource path="res://Sprites/Minimap/0003.png" type="Texture" id=69]
-[ext_resource path="res://Sprites/Minimap/0002.png" type="Texture" id=70]
-[ext_resource path="res://Sprites/Minimap/0012.png" type="Texture" id=71]
-[ext_resource path="res://Sprites/Minimap/0005.png" type="Texture" id=72]
-[ext_resource path="res://Sprites/Minimap/0006.png" type="Texture" id=73]
-[ext_resource path="res://Sprites/Minimap/0010.png" type="Texture" id=74]
-[ext_resource path="res://Sprites/Minimap/0008.png" type="Texture" id=75]
-[ext_resource path="res://Sprites/Minimap/0001.png" type="Texture" id=76]
-[ext_resource path="res://Sprites/Minimap/0011.png" type="Texture" id=77]
-[ext_resource path="res://Sprites/Minimap/0018.png" type="Texture" id=78]
-[ext_resource path="res://Sprites/Minimap/0019.png" type="Texture" id=79]
-[ext_resource path="res://Sprites/Minimap/0013.png" type="Texture" id=80]
-[ext_resource path="res://Sprites/Minimap/0014.png" type="Texture" id=81]
-[ext_resource path="res://Sprites/Minimap/0015.png" type="Texture" id=82]
-[ext_resource path="res://Sprites/Minimap/0016.png" type="Texture" id=83]
-[ext_resource path="res://Sprites/Minimap/0017.png" type="Texture" id=84]
-[ext_resource path="res://Sprites/Minimap/0020.png" type="Texture" id=85]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -103,14 +83,6 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[sub_resource type="SpriteFrames" id=4]
-animations = [ {
-"frames": [ ExtResource( 76 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 66 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 67 ), ExtResource( 74 ), ExtResource( 77 ), ExtResource( 71 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 85 ) ],
-"loop": true,
-"name": "default",
-"speed": 60.0
-} ]
-
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -124,7 +96,7 @@ __meta__ = {
 position = Vector2( 122.672, 97.8182 )
 frames = SubResource( 3 )
 animation = "spin"
-frame = 10
+frame = 29
 playing = true
 
 [node name="Interface" type="Control" parent="."]
@@ -133,6 +105,12 @@ margin_bottom = 1080.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Paper2" type="Sprite" parent="Interface"]
+position = Vector2( 959.664, 1604.11 )
+rotation = 1.5708
+scale = Vector2( 1.8855, 1.8855 )
+texture = ExtResource( 65 )
 
 [node name="Answer" type="Button" parent="Interface"]
 anchor_left = 0.5
@@ -147,22 +125,21 @@ focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
 text = "Répondre"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MapMini" type="AnimatedSprite" parent="Interface"]
-position = Vector2( 1665.36, 719.194 )
-scale = Vector2( 0.847267, 0.847267 )
-frames = SubResource( 4 )
-frame = 3
-playing = true
+[node name="MapMini" type="Sprite" parent="Interface"]
+position = Vector2( 1819.38, 674.981 )
+scale = Vector2( 0.570866, 0.570866 )
+texture = ExtResource( 3 )
 
 [node name="DisplayMap" type="Button" parent="Interface"]
-margin_left = 1383.0
-margin_top = 587.0
+margin_left = 1457.0
+margin_top = 513.0
 margin_right = 1922.0
-margin_bottom = 828.0
+margin_bottom = 836.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -182,6 +159,7 @@ focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
 text = "Bienvenue à la chasse au trésor (flèche de droite pour continuer)"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -194,6 +172,7 @@ margin_right = 200.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "<"
+flat = true
 
 [node name="Right" type="Button" parent="Interface"]
 anchor_left = 1.0
@@ -205,6 +184,7 @@ margin_top = -200.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = ">"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -212,8 +192,8 @@ __meta__ = {
 [node name="ProgressBar" type="ProgressBar" parent="Interface"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -400.0
-margin_right = 400.0
+margin_left = -200.0
+margin_right = 200.0
 margin_bottom = 68.0
 min_value = 1.0
 value = 1.0
@@ -230,8 +210,9 @@ __meta__ = {
 }
 
 [node name="Paper" type="Sprite" parent="Interface/IndiceArea"]
-position = Vector2( 980.016, 424.933 )
-scale = Vector2( 2.45684, 1.17727 )
+position = Vector2( 980.987, 424.9 )
+rotation = 4.71239
+scale = Vector2( 0.715411, 1.67676 )
 texture = ExtResource( 65 )
 
 [node name="Text" type="Label" parent="Interface/IndiceArea"]
@@ -254,6 +235,7 @@ margin_bottom = 141.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "X"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -283,6 +265,7 @@ margin_bottom = 20.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
+flat = true
 
 [node name="ClearAnswer" type="Button" parent="."]
 visible = false
@@ -297,6 +280,7 @@ margin_bottom = 20.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "CLR"
+flat = true
 
 [node name="CheckAnswer" type="Button" parent="."]
 visible = false
