@@ -27,6 +27,7 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
+	#$Ring.play("ring")
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	print(instruction.size())
 	$Interface.visible = false
@@ -66,7 +67,7 @@ func _process(delta):
 		$Interface/Left.disabled = true
 	
 	$Interface/Instruction.text = instruction[message]
-	$Interface/IndiceArea.text = question[message]
+	$Interface/IndiceArea/Text.text = question[message]
 	
 	if message == lock and message != maxmessage-1:
 		$Interface/Answer.visible = true
@@ -76,7 +77,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 	
-	$Interface/ProgressBar.value = message - 5
+	if $Interface/ProgressBar.value < message - 5:
+		$Interface/ProgressBar.value = message - 5
 		
 	if message == lock:
 		$Interface/Right.disabled = true
