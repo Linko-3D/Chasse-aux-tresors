@@ -3,7 +3,6 @@
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
 [ext_resource path="res://map.png" type="Texture" id=3]
-[ext_resource path="res://Music.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Sprites/Ring/0002.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Ring/0001.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Ring/0004.png" type="Texture" id=7]
@@ -23,6 +22,7 @@
 [ext_resource path="res://Sprites/Ring/0012.png" type="Texture" id=21]
 [ext_resource path="res://Sprites/Ring/0003.png" type="Texture" id=22]
 [ext_resource path="res://Sprites/Ring/0028.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/grunge vignette.png" type="Texture" id=24]
 [ext_resource path="res://Sprites/Ring/0029.png" type="Texture" id=25]
 [ext_resource path="res://Sprites/Ring/0019.png" type="Texture" id=26]
 [ext_resource path="res://Sprites/Ring/0020.png" type="Texture" id=27]
@@ -105,6 +105,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Vignette" type="Sprite" parent="Interface"]
+position = Vector2( 0, 142.206 )
+scale = Vector2( 2.40301, 1.51211 )
+texture = ExtResource( 24 )
+centered = false
+
 [node name="Paper2" type="Sprite" parent="Interface"]
 position = Vector2( 954.504, 1765.66 )
 rotation = 1.5708
@@ -130,10 +136,10 @@ __meta__ = {
 }
 
 [node name="DisplayMap" type="Button" parent="Interface"]
-margin_left = 1457.0
-margin_top = 513.0
+margin_left = 1306.0
+margin_top = 693.0
 margin_right = 1922.0
-margin_bottom = 836.0
+margin_bottom = 1035.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -142,7 +148,7 @@ __meta__ = {
 }
 
 [node name="MapMini" type="Sprite" parent="Interface/DisplayMap"]
-position = Vector2( 362.38, 161.981 )
+position = Vector2( 367.61, 170.824 )
 scale = Vector2( 0.570866, 0.570866 )
 texture = ExtResource( 3 )
 
@@ -234,28 +240,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Restart" type="Button" parent="Interface"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -3.70129
+margin_top = -342.527
+margin_right = 393.299
+margin_bottom = -193.527
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Recommencer"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( 1051.05, -291.213 )
+position = Vector2( 1187.09, -284.053 )
 rotation = -1.5708
 scale = Vector2( 1.1269, 1.1269 )
 texture = ExtResource( 65 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1781.26, 2.54752 )
+position = Vector2( 1851.01, 6.84314 )
 rotation = -1.5708
-scale = Vector2( 0.389581, 0.389581 )
+scale = Vector2( 0.389581, 0.222588 )
 texture = ExtResource( 65 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 254.101, -193.602 )
-scale = Vector2( 0.673917, 0.673917 )
+position = Vector2( 309.744, -231.227 )
+scale = Vector2( 0.836133, 0.836133 )
 texture = ExtResource( 65 )
 
 [node name="Exit" type="Button" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -150.0
-margin_bottom = 141.0
+margin_left = -175.0
+margin_top = -3.0
+margin_right = -2.0
+margin_bottom = 155.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "X"
@@ -338,36 +361,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
-autoplay = true
-
-[node name="CheckBox" type="CheckBox" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -328.0
-margin_right = -137.0
-margin_bottom = 76.0
-focus_mode = 0
-pressed = true
-enabled_focus_mode = 0
-text = "Music"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Title" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 6.0
+margin_top = 2.20529
+margin_right = 628.0
+margin_bottom = 191.205
 text = "Chasse aux trésors
-Tolkien"
+Tolkien
+Médiathèque Jean Ferrat"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CreditButton" type="Button" parent="."]
-margin_right = 514.0
-margin_bottom = 151.0
+margin_right = 630.0
+margin_bottom = 198.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -445,16 +453,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Restart" type="Button" parent="."]
-anchor_top = 1.0
+[node name="Credit" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -3.70129
-margin_top = -342.527
-margin_right = 393.299
-margin_bottom = -193.527
-focus_mode = 0
-enabled_focus_mode = 0
-text = "Recommencer"
+margin_right = -1920.0
+margin_bottom = -1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Credit"]
+position = Vector2( 928.031, 535.167 )
+rotation = -1.5708
+scale = Vector2( 0.583414, 0.655875 )
+texture = ExtResource( 65 )
+
+[node name="Label" type="Label" parent="Credit"]
+margin_left = 633.0
+margin_top = 342.0
+margin_right = 1394.0
+margin_bottom = 781.0
+text = "Conception:
+Bekhoucha Danyl
+
+
+Contact:
+dbekhouc@gmail.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HideCredit" type="Button" parent="Credit"]
+margin_right = 1943.0
+margin_bottom = 1099.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -468,85 +500,53 @@ __meta__ = {
 }
 
 [node name="Ring1" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 598.493, 72.8678 )
+position = Vector2( 733.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 748.493, 72.8678 )
+position = Vector2( 883.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 898.493, 72.8678 )
+position = Vector2( 1033.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1048.49, 72.8678 )
+position = Vector2( 1183.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1198.49, 72.8678 )
+position = Vector2( 1333.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1348.49, 72.8678 )
+position = Vector2( 1483.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1498.49, 72.8678 )
+position = Vector2( 1633.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 5
+frame = 9
 playing = true
-
-[node name="Credit" type="Control" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_right = -1920.0
-margin_bottom = -1080.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Sprite" type="Sprite" parent="Credit"]
-position = Vector2( 960, 552.172 )
-rotation = -1.5708
-scale = Vector2( 0.627698, 0.84585 )
-texture = ExtResource( 65 )
-
-[node name="Label" type="Label" parent="Credit"]
-margin_left = 525.0
-margin_top = 326.262
-margin_right = 1394.0
-margin_bottom = 781.262
-text = "Conception:
-Bekhoucha Danyl
-
-
-
-Contact:
-dbekhouc@gmail.com"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
 [connection signal="button_down" from="Interface/Instruction" to="." method="_on_Instruction_button_down"]
@@ -554,13 +554,13 @@ __meta__ = {
 [connection signal="pressed" from="Interface/Left" to="." method="_on_Left_pressed"]
 [connection signal="pressed" from="Interface/Right" to="." method="_on_Right_pressed"]
 [connection signal="pressed" from="Interface/IndiceArea/IndiceButton" to="." method="_on_IndiceButton_pressed"]
+[connection signal="pressed" from="Interface/Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="ValidAnswer" to="." method="_on_ValidAnswer_pressed"]
 [connection signal="pressed" from="ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
 [connection signal="pressed" from="CheckAnswer" to="." method="_on_CheckAnswer_pressed"]
-[connection signal="pressed" from="CheckBox" to="." method="_on_CheckBox_pressed"]
 [connection signal="pressed" from="CreditButton" to="." method="_on_CreditButton_pressed"]
 [connection signal="pressed" from="DisableInterface" to="." method="_on_DisableInterface_pressed"]
 [connection signal="pressed" from="Difficulty/Child" to="." method="_on_Child_pressed"]
 [connection signal="pressed" from="Difficulty/Adult" to="." method="_on_Adult_pressed"]
-[connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
+[connection signal="pressed" from="Credit/HideCredit" to="." method="_on_HideCredit_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The Bridge Of Khazad Dum.ogg-c3ab40440d82ae9fdc89329a2cb73f5f.oggstr"
+
+[deps]
+
+source_file="res://The Bridge Of Khazad Dum.ogg"
+dest_files=[ "res://.import/The Bridge Of Khazad Dum.ogg-c3ab40440d82ae9fdc89329a2cb73f5f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

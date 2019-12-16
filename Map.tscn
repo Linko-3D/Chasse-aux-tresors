@@ -260,7 +260,7 @@ shape = SubResource( 1 )
 
 [node name="Sun" type="DirectionalLight" parent="."]
 transform = Transform( 0.173648, -0.336824, 0.925417, 0, 0.939693, 0.34202, -0.984808, -0.0593912, 0.163176, 10.6503, 2.02495, -1.38783 )
-light_color = Color( 0.839216, 0.803922, 0.568627, 1 )
+light_color = Color( 1, 0.584314, 0, 1 )
 
 [node name="Props" type="Spatial" parent="."]
 

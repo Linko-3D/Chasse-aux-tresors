@@ -19,6 +19,10 @@ config/name="Chasse aux trésors Tolkien"
 run/main_scene="res://Map.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Music="*res://Music.tscn"
+
 [display]
 
 window/size/width=1920
