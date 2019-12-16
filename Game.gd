@@ -211,3 +211,7 @@ func _on_IndiceButton_pressed():
 	$Interface/Right.disabled = false
 	$Interface/IndiceArea.visible = false
 	$Interface/Answer.disabled = false
+
+
+func _on_CreditButton_pressed():
+	$Credit.visible != $Credit.visible

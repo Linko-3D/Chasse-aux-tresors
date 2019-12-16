@@ -106,9 +106,9 @@ __meta__ = {
 }
 
 [node name="Paper2" type="Sprite" parent="Interface"]
-position = Vector2( 959.664, 1612.7 )
+position = Vector2( 954.504, 1765.66 )
 rotation = 1.5708
-scale = Vector2( 1.86312, 1.8855 )
+scale = Vector2( 1.88667, 1.88667 )
 texture = ExtResource( 65 )
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -116,10 +116,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -150.0
-margin_top = -350.0
-margin_right = 150.0
-margin_bottom = -200.0
+margin_left = -153.701
+margin_top = -209.234
+margin_right = 146.299
+margin_bottom = -59.2344
 focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
@@ -151,9 +151,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -1100.0
-margin_top = -200.0
-margin_right = 1100.0
+margin_left = -1099.58
+margin_top = -50.6936
+margin_right = 1100.42
+margin_bottom = 149.306
 focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
@@ -166,8 +167,10 @@ __meta__ = {
 [node name="Left" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -200.0
-margin_right = 200.0
+margin_left = 0.421448
+margin_top = -50.6936
+margin_right = 200.421
+margin_bottom = 149.306
 focus_mode = 0
 enabled_focus_mode = 0
 text = "<"
@@ -178,8 +181,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -200.0
-margin_top = -200.0
+margin_left = -199.578
+margin_top = -50.6936
+margin_right = 0.421631
+margin_bottom = 149.306
 focus_mode = 0
 enabled_focus_mode = 0
 text = ">"
@@ -351,11 +356,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
 text = "Chasse aux trésors
 Tolkien"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreditButton" type="Button" parent="."]
+margin_right = 514.0
+margin_bottom = 151.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -433,9 +448,10 @@ __meta__ = {
 [node name="Restart" type="Button" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -490.0
-margin_right = 397.0
-margin_bottom = -364.0
+margin_left = -3.70129
+margin_top = -342.527
+margin_right = 393.299
+margin_bottom = -193.527
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Recommencer"
@@ -455,50 +471,82 @@ __meta__ = {
 position = Vector2( 598.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 748.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 898.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1048.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1198.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1348.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1498.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 20
+frame = 5
 playing = true
+
+[node name="Credit" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1920.0
+margin_bottom = -1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Credit"]
+position = Vector2( 960, 552.172 )
+rotation = -1.5708
+scale = Vector2( 0.627698, 0.84585 )
+texture = ExtResource( 65 )
+
+[node name="Label" type="Label" parent="Credit"]
+margin_left = 525.0
+margin_top = 326.262
+margin_right = 1394.0
+margin_bottom = 781.262
+text = "Conception:
+Bekhoucha Danyl
+
+
+
+Contact:
+dbekhouc@gmail.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
 [connection signal="button_down" from="Interface/Instruction" to="." method="_on_Instruction_button_down"]
@@ -511,6 +559,7 @@ playing = true
 [connection signal="pressed" from="ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
 [connection signal="pressed" from="CheckAnswer" to="." method="_on_CheckAnswer_pressed"]
 [connection signal="pressed" from="CheckBox" to="." method="_on_CheckBox_pressed"]
+[connection signal="pressed" from="CreditButton" to="." method="_on_CreditButton_pressed"]
 [connection signal="pressed" from="DisableInterface" to="." method="_on_DisableInterface_pressed"]
 [connection signal="pressed" from="Difficulty/Child" to="." method="_on_Child_pressed"]
 [connection signal="pressed" from="Difficulty/Adult" to="." method="_on_Adult_pressed"]
