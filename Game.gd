@@ -204,3 +204,10 @@ func _on_Adult_pressed():
 
 func _on_Restart_pressed():
 	get_tree().reload_current_scene()
+
+func _on_IndiceButton_pressed():
+	toggle_instruction = false
+	$Interface/Left.disabled = false
+	$Interface/Right.disabled = false
+	$Interface/IndiceArea.visible = false
+	$Interface/Answer.disabled = false

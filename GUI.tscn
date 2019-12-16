@@ -256,7 +256,7 @@ __meta__ = {
 }
 
 [node name="Paper" type="Sprite" parent="Interface/IndiceArea"]
-position = Vector2( 980.987, 424.9 )
+position = Vector2( 980.987, 455.2 )
 rotation = 4.71239
 scale = Vector2( 0.715411, 1.67676 )
 texture = ExtResource( 65 )
@@ -266,20 +266,43 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 100.0
-margin_top = 130.0
+margin_left = 103.0
+margin_top = 162.0
 margin_right = 1820.0
-margin_bottom = 680.0
+margin_bottom = 712.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1870.68, 65.4096 )
+[node name="IndiceButton" type="Button" parent="Interface/IndiceArea"]
+margin_left = 122.0
+margin_top = 180.0
+margin_right = 1839.0
+margin_bottom = 730.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 1051.05, -291.213 )
 rotation = -1.5708
-scale = Vector2( 0.187594, 0.187594 )
+scale = Vector2( 1.1269, 1.1269 )
+texture = ExtResource( 65 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1781.26, 2.54752 )
+rotation = -1.5708
+scale = Vector2( 0.389581, 0.389581 )
+texture = ExtResource( 65 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 254.101, -193.602 )
+scale = Vector2( 0.673917, 0.673917 )
 texture = ExtResource( 65 )
 
 [node name="Exit" type="Button" parent="."]
@@ -376,8 +399,8 @@ autoplay = true
 [node name="CheckBox" type="CheckBox" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -350.0
-margin_right = -150.0
+margin_left = -328.0
+margin_right = -137.0
 margin_bottom = 76.0
 focus_mode = 0
 pressed = true
@@ -398,7 +421,7 @@ __meta__ = {
 
 [node name="Map" type="Sprite" parent="."]
 visible = false
-position = Vector2( 960, 502.71 )
+position = Vector2( 960, 515.58 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 3 )
 
@@ -469,9 +492,9 @@ __meta__ = {
 [node name="Restart" type="Button" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -350.0
+margin_top = -490.0
 margin_right = 397.0
-margin_bottom = -200.0
+margin_bottom = -364.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Recommencer"
@@ -491,49 +514,49 @@ __meta__ = {
 position = Vector2( 598.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 41
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 748.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 41
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 898.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 40
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1048.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 41
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1198.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 40
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1348.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 41
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1498.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 40
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
@@ -541,6 +564,7 @@ playing = true
 [connection signal="pressed" from="Interface/Instruction" to="." method="_on_Instruction_pressed"]
 [connection signal="pressed" from="Interface/Left" to="." method="_on_Left_pressed"]
 [connection signal="pressed" from="Interface/Right" to="." method="_on_Right_pressed"]
+[connection signal="pressed" from="Interface/IndiceArea/IndiceButton" to="." method="_on_IndiceButton_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="ValidAnswer" to="." method="_on_ValidAnswer_pressed"]
 [connection signal="pressed" from="ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
