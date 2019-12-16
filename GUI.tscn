@@ -491,49 +491,49 @@ __meta__ = {
 position = Vector2( 598.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 4
+frame = 8
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 748.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 4
+frame = 8
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 898.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1048.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 4
+frame = 8
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1198.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1348.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 4
+frame = 8
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1498.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 3
+frame = 7
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
