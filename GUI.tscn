@@ -148,7 +148,7 @@ __meta__ = {
 }
 
 [node name="MapMini" type="Sprite" parent="Interface/DisplayMap"]
-position = Vector2( 367.61, 170.824 )
+position = Vector2( 596.092, 158.131 )
 scale = Vector2( 0.570866, 0.570866 )
 texture = ExtResource( 3 )
 
@@ -208,7 +208,7 @@ __meta__ = {
 }
 
 [node name="Paper" type="Sprite" parent="Interface/IndiceArea"]
-position = Vector2( 980.987, 455.2 )
+position = Vector2( 985.304, 580.391 )
 rotation = 4.71239
 scale = Vector2( 0.715411, 1.67676 )
 texture = ExtResource( 65 )
@@ -218,10 +218,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 103.0
-margin_top = 162.0
-margin_right = 1820.0
-margin_bottom = 712.0
+margin_left = 107.317
+margin_top = 287.191
+margin_right = 1824.32
+margin_bottom = 837.191
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
 __meta__ = {
@@ -229,10 +229,10 @@ __meta__ = {
 }
 
 [node name="IndiceButton" type="Button" parent="Interface/IndiceArea"]
-margin_left = -86.0
-margin_top = 151.0
-margin_right = 1962.0
-margin_bottom = 894.0
+margin_left = -81.6831
+margin_top = 276.191
+margin_right = 1966.32
+margin_bottom = 1019.19
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -503,49 +503,49 @@ __meta__ = {
 position = Vector2( 733.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 883.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1033.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1183.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1333.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1483.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1633.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 9
+frame = 25
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
