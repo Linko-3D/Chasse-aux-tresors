@@ -243,10 +243,10 @@ __meta__ = {
 [node name="Restart" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -3.70129
-margin_top = -342.527
-margin_right = 393.299
-margin_bottom = -193.527
+margin_left = -4.0
+margin_top = -213.0
+margin_right = 393.0
+margin_bottom = -62.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Recommencer"
@@ -294,9 +294,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -250.0
-margin_top = -200.0
+margin_top = -272.987
 margin_right = 250.0
-margin_bottom = 20.0
+margin_bottom = -52.9871
 caret_blink = true
 
 [node name="ValidAnswer" type="Button" parent="."]
@@ -306,9 +306,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 250.0
-margin_top = -200.0
+margin_top = -272.987
 margin_right = 500.0
-margin_bottom = 20.0
+margin_bottom = -52.9871
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
@@ -321,9 +321,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -500.0
-margin_top = -200.0
+margin_top = -272.987
 margin_right = -250.0
-margin_bottom = 20.0
+margin_bottom = -52.9871
 focus_mode = 0
 enabled_focus_mode = 0
 text = "CLR"
@@ -336,9 +336,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -550.0
-margin_top = -300.0
+margin_top = -319.48
 margin_right = 550.0
-margin_bottom = 100.0
+margin_bottom = 80.5197
 focus_mode = 0
 enabled_focus_mode = 0
 __meta__ = {
@@ -354,6 +354,8 @@ texture = ExtResource( 65 )
 [node name="CheckAnswerText" type="Label" parent="CheckAnswer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = -15.5842
+margin_bottom = -15.5842
 text = "Mauvaise réponse !"
 align = 1
 valign = 1
@@ -385,7 +387,7 @@ __meta__ = {
 
 [node name="Map" type="Sprite" parent="."]
 visible = false
-position = Vector2( 960, 515.58 )
+position = Vector2( 960, 563.37 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 3 )
 
@@ -503,49 +505,49 @@ __meta__ = {
 position = Vector2( 733.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 883.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1033.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1183.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1333.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1483.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1633.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 25
+frame = 3
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
