@@ -165,9 +165,9 @@ __meta__ = {
 }
 
 [node name="Paper2" type="Sprite" parent="Interface"]
-position = Vector2( 959.664, 1604.11 )
+position = Vector2( 959.664, 1612.7 )
 rotation = 1.5708
-scale = Vector2( 1.8855, 1.8855 )
+scale = Vector2( 1.86312, 1.8855 )
 texture = ExtResource( 65 )
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -491,49 +491,49 @@ __meta__ = {
 position = Vector2( 598.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 9
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 748.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 9
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 898.493, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 7
+frame = 8
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1048.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 9
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1198.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 7
+frame = 8
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1348.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 8
+frame = 9
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1498.49, 72.8678 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 7
+frame = 8
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]

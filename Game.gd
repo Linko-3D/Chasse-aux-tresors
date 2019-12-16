@@ -50,7 +50,7 @@ func _process(delta):
 		$Rings/Ring7.play("metal")
 	
 	if $CameraAnimation.is_playing() == false:
-		camera.rotate_y(-.01)
+		camera.rotate_y(-.5*delta)
 		
 	if wasPlayed == false:
 		if message == 7:
