@@ -1,13 +1,13 @@
-extends Area2D
+extends Position2D
 
+var dragMouse = false
 
 func _process(delta):
-	set_position(get_viewport().get_mouse_position())
+	if dragMouse:
+		set_position(get_viewport().get_mouse_position())
 
+func _on_Map_button_down():
+	dragMouse = true
 
-
-func _on_Map_input_event(viewport, event, shape_idx):
-	print("a")
-	if event is InputEventMouseButton:
-		if event.is_pressed():
-			print("click")
+func _on_Map_button_up():
+	dragMouse = false
