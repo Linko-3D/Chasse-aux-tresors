@@ -28,7 +28,6 @@ var maxmessage = instruction.size()
 
 func _ready():
 	camera = get_tree().get_root().find_node("Camera", true, false)
-	print(instruction.size())
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
@@ -186,12 +185,12 @@ func _on_CheckBox_pressed():
 		musicOn = true
 
 func _on_DisplayMap_pressed():
-	$Map.visible = true
+	$MapZoomed.visible = true
 	$DisableInterface.visible = true
 
 func _on_DisableInterface_pressed():
 	$DisableInterface.visible = false
-	$Map.visible = false
+	$MapZoomed.visible = false
 
 func _on_Child_pressed():
 	question = easyQuestions
@@ -204,7 +203,6 @@ func _on_Adult_pressed():
 	answers = hardAnswers
 	$Difficulty.visible = false
 	$Interface.visible = true
-
 
 func _on_Restart_pressed():
 	get_tree().reload_current_scene()

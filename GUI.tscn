@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -67,6 +67,7 @@
 [ext_resource path="res://Sprites/Ring/0030.png" type="Texture" id=65]
 [ext_resource path="res://Sprites/Ring/0031.png" type="Texture" id=66]
 [ext_resource path="res://Sprites/compass.png" type="Texture" id=67]
+[ext_resource path="res://MapClick.gd" type="Script" id=68]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -76,6 +77,9 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 360.763, 159.617 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -193,6 +197,20 @@ __meta__ = {
 
 [node name="MapMini" type="Sprite" parent="Interface/DisplayMap"]
 position = Vector2( 361.895, 160.254 )
+scale = Vector2( 0.570866, 0.570866 )
+texture = ExtResource( 5 )
+
+[node name="Map" type="Area2D" parent="Interface"]
+position = Vector2( 1646.08, 422.72 )
+script = ExtResource( 68 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interface/Map"]
+shape = SubResource( 5 )
+
+[node name="MapMini" type="Sprite" parent="Interface/Map/CollisionShape2D"]
 scale = Vector2( 0.570866, 0.570866 )
 texture = ExtResource( 5 )
 
@@ -314,7 +332,7 @@ visible = false
 position = Vector2( 960, 539.933 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 3 )
-frame = 21
+frame = 15
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -467,7 +485,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Map" type="Sprite" parent="."]
+[node name="MapZoomed" type="Sprite" parent="."]
 visible = false
 position = Vector2( 960, 563.37 )
 scale = Vector2( 1.25, 1.25 )
@@ -592,49 +610,49 @@ __meta__ = {
 position = Vector2( 734.675, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 884.675, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1034.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1184.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1334.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1484.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1634.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 4
+frame = 16
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -650,6 +668,7 @@ __meta__ = {
 }
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
+[connection signal="input_event" from="Interface/Map" to="Interface/Map" method="_on_Map_input_event"]
 [connection signal="button_down" from="Interface/Instruction" to="." method="_on_Instruction_button_down"]
 [connection signal="pressed" from="Interface/Instruction" to="." method="_on_Instruction_pressed"]
 [connection signal="pressed" from="Interface/Left" to="." method="_on_Left_pressed"]
