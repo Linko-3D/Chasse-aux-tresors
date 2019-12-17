@@ -3,17 +3,16 @@
 importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.s3tc.stex"
-path.etc2="res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.etc2.stex"
 path.etc="res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.etc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2", "etc" ],
+"imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Materials/books nor.png"
-dest_files=[ "res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.s3tc.stex", "res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.etc2.stex", "res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.etc.stex" ]
+dest_files=[ "res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.s3tc.stex", "res://.import/books nor.png-2a143d339cec2b89a4cfc81bada18542.etc.stex" ]
 
 [params]
 
