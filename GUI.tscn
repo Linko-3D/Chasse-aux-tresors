@@ -110,15 +110,18 @@ __meta__ = {
 }
 
 [node name="Telescope" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 200, 800 )
 texture = ExtResource( 69 )
 
 [node name="Compass" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 1749.43, 930 )
 scale = Vector2( 1.2, 1.2 )
 texture = ExtResource( 67 )
 
 [node name="Vignette" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.392157 )
 position = Vector2( 0, 205.553 )
 scale = Vector2( 2.40017, 1.24141 )
 texture = ExtResource( 3 )
@@ -148,14 +151,15 @@ __meta__ = {
 }
 
 [node name="MapMini" type="Sprite" parent="Interface/MapCenter"]
-scale = Vector2( 0.85, 0.85 )
+modulate = Color( 1, 1, 1, 0.784314 )
+scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 5 )
 
 [node name="Map" type="Button" parent="Interface/MapCenter"]
-margin_left = -540.0
-margin_top = -241.0
-margin_right = 477.0
-margin_bottom = 213.0
+margin_left = -478.0
+margin_top = -213.0
+margin_right = 476.0
+margin_bottom = 212.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -325,7 +329,7 @@ visible = false
 position = Vector2( 960, 539.933 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 3 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -603,49 +607,49 @@ __meta__ = {
 position = Vector2( 734.675, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 884.675, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1034.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1184.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1334.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1484.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1634.67, 70.4132 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 24
+frame = 3
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
