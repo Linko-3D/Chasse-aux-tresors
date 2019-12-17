@@ -34,6 +34,8 @@ func _ready():
 	$Interface/Right.disabled = true
 
 func _process(delta):
+	if lock == 13:
+		$FinalRing.visible = true
 	if lock > 6:
 		$Rings/Ring1.play("metal")
 	if lock > 7:
@@ -135,6 +137,7 @@ func _on_Answer_pressed(): #adjust visibility
 		$Interface/Left.disabled = true
 		$Interface/Right.disabled = true
 		$GiveAnswer.visible = true
+		$CloseQuestion.visible = true
 		$ValidAnswer.visible = true
 		$ClearAnswer.visible = true
 		toggle_answer = true
@@ -143,6 +146,7 @@ func _on_Answer_pressed(): #adjust visibility
 		$Interface/Left.disabled = false
 		$Interface/Right.disabled = false
 		$GiveAnswer.visible = false
+		$CloseQuestion.visible = false
 		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
 		$ClearAnswer.visible = false
@@ -217,3 +221,6 @@ func _on_CreditButton_pressed():
 
 func _on_HideCredit_pressed():
 	$Credit.visible = false
+
+func _on_CloseQuestion_pressed():
+	_on_Answer_pressed()

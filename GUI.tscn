@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -76,6 +76,14 @@ font_data = ExtResource( 1 )
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
 
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
@@ -98,9 +106,17 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="FinalRing" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 960, 539.933 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 4 )
+frame = 26
+playing = true
+
 [node name="Interface" type="Control" parent="."]
-margin_right = 1920.0
-margin_bottom = 1080.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,20 +128,40 @@ texture = ExtResource( 3 )
 centered = false
 
 [node name="Paper2" type="Sprite" parent="Interface"]
-position = Vector2( 954.504, 1765.66 )
+position = Vector2( 978.164, 1617.04 )
 rotation = 1.5708
-scale = Vector2( 1.88667, 1.88667 )
+scale = Vector2( 1.73661, 1.73661 )
 texture = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="Interface"]
+margin_left = -71.0
+margin_top = 950.0
+margin_right = 150.0
+margin_bottom = 1085.0
+color = Color( 0.784314, 0.509804, 0.196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Interface"]
+margin_left = 1770.0
+margin_top = 950.0
+margin_right = 1932.0
+margin_bottom = 1085.0
+color = Color( 0.784314, 0.509804, 0.196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Answer" type="Button" parent="Interface"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -153.701
-margin_top = -209.234
-margin_right = 146.299
-margin_bottom = -59.2344
+margin_left = -142.529
+margin_top = -263.035
+margin_right = 157.471
+margin_bottom = -113.035
 focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
@@ -136,19 +172,20 @@ __meta__ = {
 }
 
 [node name="DisplayMap" type="Button" parent="Interface"]
-margin_left = 1306.0
-margin_top = 693.0
-margin_right = 1922.0
-margin_bottom = 1035.0
+margin_left = 1393.64
+margin_top = 523.702
+margin_right = 2009.64
+margin_bottom = 843.702
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="MapMini" type="Sprite" parent="Interface/DisplayMap"]
-position = Vector2( 596.092, 158.131 )
+position = Vector2( 361.895, 160.254 )
 scale = Vector2( 0.570866, 0.570866 )
 texture = ExtResource( 5 )
 
@@ -157,10 +194,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -1099.58
-margin_top = -50.6936
-margin_right = 1100.42
-margin_bottom = 149.306
+margin_left = -1097.63
+margin_top = -161.731
+margin_right = 1102.37
+margin_bottom = 38.2689
 focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
@@ -173,10 +210,9 @@ __meta__ = {
 [node name="Left" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 0.421448
-margin_top = -50.6936
-margin_right = 200.421
-margin_bottom = 149.306
+margin_top = -161.731
+margin_right = 150.0
+margin_bottom = 38.2689
 focus_mode = 0
 enabled_focus_mode = 0
 text = "<"
@@ -187,10 +223,9 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -199.578
-margin_top = -50.6936
-margin_right = 0.421631
-margin_bottom = 149.306
+margin_left = -150.0
+margin_top = -161.731
+margin_bottom = 38.2689
 focus_mode = 0
 enabled_focus_mode = 0
 text = ">"
@@ -207,21 +242,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Paper" type="Sprite" parent="Interface/IndiceArea"]
-position = Vector2( 985.304, 580.391 )
-rotation = 4.71239
-scale = Vector2( 0.715411, 1.67676 )
-texture = ExtResource( 4 )
+[node name="ColorRect" type="ColorRect" parent="Interface/IndiceArea"]
+margin_left = 100.0
+margin_top = 246.0
+margin_right = 1820.0
+margin_bottom = 810.0
+color = Color( 0.784314, 0.509804, 0.196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Text" type="Label" parent="Interface/IndiceArea"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 107.317
-margin_top = 287.191
-margin_right = 1824.32
-margin_bottom = 837.191
+margin_left = 89.0
+margin_top = 232.0
+margin_right = 1803.0
+margin_bottom = 785.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
 __meta__ = {
@@ -229,10 +268,10 @@ __meta__ = {
 }
 
 [node name="IndiceButton" type="Button" parent="Interface/IndiceArea"]
-margin_left = -81.6831
-margin_top = 276.191
-margin_right = 1966.32
-margin_bottom = 1019.19
+margin_left = -80.052
+margin_top = 205.0
+margin_right = 1967.95
+margin_bottom = 850.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -243,10 +282,10 @@ __meta__ = {
 [node name="Restart" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -4.0
-margin_top = -213.0
-margin_right = 393.0
-margin_bottom = -62.0
+margin_left = 7.43188
+margin_top = -261.244
+margin_right = 404.432
+margin_bottom = -116.244
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Recommencer"
@@ -261,13 +300,17 @@ rotation = -1.5708
 scale = Vector2( 1.1269, 1.1269 )
 texture = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1851.01, 6.84314 )
-rotation = -1.5708
-scale = Vector2( 0.389581, 0.222588 )
-texture = ExtResource( 4 )
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1737.0
+margin_top = -5.0
+margin_right = 1928.0
+margin_bottom = 156.0
+color = Color( 0.27451, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Sprite2" type="Sprite" parent="."]
+[node name="BackgroundTitle" type="Sprite" parent="."]
 position = Vector2( 309.744, -231.227 )
 scale = Vector2( 0.836133, 0.836133 )
 texture = ExtResource( 4 )
@@ -287,6 +330,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="CloseQuestion" type="Button" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -217.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="GiveAnswer" type="LineEdit" parent="."]
 visible = false
 anchor_left = 0.5
@@ -294,10 +349,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -250.0
-margin_top = -272.987
+margin_top = -238.0
 margin_right = 250.0
-margin_bottom = -52.9871
+margin_bottom = -87.0
 caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ValidAnswer" type="Button" parent="."]
 visible = false
@@ -305,10 +363,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 250.0
-margin_top = -272.987
-margin_right = 500.0
-margin_bottom = -52.9871
+margin_left = 240.0
+margin_top = -273.0
+margin_right = 380.0
+margin_bottom = -53.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
@@ -326,8 +384,11 @@ margin_right = -250.0
 margin_bottom = -52.9871
 focus_mode = 0
 enabled_focus_mode = 0
-text = "CLR"
+text = "Effacer"
 flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CheckAnswer" type="Button" parent="."]
 visible = false
@@ -336,9 +397,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -550.0
-margin_top = -319.48
+margin_top = -285.0
 margin_right = 550.0
-margin_bottom = 80.5197
+margin_bottom = -33.0
 focus_mode = 0
 enabled_focus_mode = 0
 __meta__ = {
@@ -346,16 +407,15 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="CheckAnswer"]
-position = Vector2( 549.576, 199.498 )
+position = Vector2( 549.576, 125.39 )
 rotation = 4.71239
-scale = Vector2( 0.52327, 1.07782 )
+scale = Vector2( 0.330281, 1.07782 )
 texture = ExtResource( 4 )
 
 [node name="CheckAnswerText" type="Label" parent="CheckAnswer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -15.5842
-margin_bottom = -15.5842
+margin_bottom = 1.0
 text = "Mauvaise réponse !"
 align = 1
 valign = 1
@@ -412,10 +472,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="Difficulty"]
-position = Vector2( 150.387, 194.938 )
-scale = Vector2( 0.413924, 0.399923 )
-texture = ExtResource( 4 )
+[node name="ColorRect" type="ColorRect" parent="Difficulty"]
+margin_left = -8.0
+margin_top = -10.0
+margin_right = 310.0
+margin_bottom = 399.0
+color = Color( 0.784314, 0.509804, 0.196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Difficulty" type="Label" parent="Difficulty"]
 anchor_left = 0.5
@@ -505,49 +570,49 @@ __meta__ = {
 position = Vector2( 733.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 883.623, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1033.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1183.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1333.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1483.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1633.62, 74.6237 )
 frames = SubResource( 3 )
 animation = "empty"
-frame = 24
+frame = 18
 playing = true
 [connection signal="pressed" from="Interface/Answer" to="." method="_on_Answer_pressed"]
 [connection signal="pressed" from="Interface/DisplayMap" to="." method="_on_DisplayMap_pressed"]
@@ -558,6 +623,7 @@ playing = true
 [connection signal="pressed" from="Interface/IndiceArea/IndiceButton" to="." method="_on_IndiceButton_pressed"]
 [connection signal="pressed" from="Interface/Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="CloseQuestion" to="." method="_on_CloseQuestion_pressed"]
 [connection signal="pressed" from="ValidAnswer" to="." method="_on_ValidAnswer_pressed"]
 [connection signal="pressed" from="ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
 [connection signal="pressed" from="CheckAnswer" to="." method="_on_CheckAnswer_pressed"]
