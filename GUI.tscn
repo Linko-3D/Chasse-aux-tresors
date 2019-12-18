@@ -379,7 +379,7 @@ __meta__ = {
 position = Vector2( 1195.2, 99.459 )
 scale = Vector2( 1.9, 1.9 )
 frames = SubResource( 3 )
-frame = 26
+frame = 48
 playing = true
 
 [node name="FinalRing" type="AnimatedSprite" parent="."]
@@ -387,7 +387,7 @@ visible = false
 position = Vector2( 960, 539.933 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 4 )
-frame = 2
+frame = 12
 playing = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -659,49 +659,49 @@ __meta__ = {
 position = Vector2( 734.675, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 884.675, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1034.67, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1184.67, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1334.67, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1484.67, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1634.67, 70.4132 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 22
+frame = 17
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]

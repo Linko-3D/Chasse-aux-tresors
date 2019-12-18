@@ -168,6 +168,7 @@ func _on_CheckAnswer_pressed():
 		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
 		$ClearAnswer.visible = false
+		$CloseQuestion.visible = false		
 		$Interface/Answer.pressed = false
 		toggle_answer = false
 
