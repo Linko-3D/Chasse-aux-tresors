@@ -119,7 +119,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector3( -4.737, 2.3, 10.908 ), Vector3( -2.6493, 2.3, -7.84041 ) ]
+"values": [ Vector3( -5.355, 2.3, 10.908 ), Vector3( -3.96258, 2.3, -9.99084 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -147,7 +147,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1.5, 4.1, 7.4, 9.9, 11.7, 14.6, 16 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -2.649, 2.3, -7.84 ), Vector3( -3.97829, 2.3, -11.1866 ), Vector3( 3.72833, 2.3, -12.7502 ), Vector3( 3.94166, 2.3, -21.9536 ), Vector3( -3.28885, 2.3, -23.8854 ), Vector3( -0.699652, 2.3, -29.8902 ), Vector3( 5.05717, 2.3, -30.4139 ), Vector3( 4.36831, 2.3, -33.7553 ) ]
+"values": [ Vector3( -3.963, 2.3, -9.991 ), Vector3( -3.97829, 2.3, -11.1866 ), Vector3( 3.72833, 2.3, -12.7502 ), Vector3( 3.94166, 2.3, -21.9536 ), Vector3( -3.28885, 2.3, -23.8854 ), Vector3( -0.699652, 2.3, -29.8902 ), Vector3( 5.05717, 2.3, -30.4139 ), Vector3( 4.36831, 2.3, -33.7553 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -1268,8 +1268,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.211, 2.3, 39.005 )
 [node name="QuestionMark2" parent="Questions" instance=ExtResource( 35 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.68386, 2.3, 6.73862 )
 
+[node name="QuestionMark3" parent="Questions" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82532, 2.3, -9.99049 )
+
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.993712, 0, -0.111969, 0, 1, 0, 0.111969, 0, 0.993712, -5.35453, 2.3, 6.81909 )
+transform = Transform( 0.993931, 0, 0.150707, 0, 1, 0, -0.151452, 0, 0.989045, -3.963, 2.3, -9.991 )
 current = true
 fov = 80.0
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=126 format=2]
+[gd_scene load_steps=127 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -120,9 +120,10 @@
 [ext_resource path="res://Sprites/Border/0049.png" type="Texture" id=118]
 [ext_resource path="res://Sprites/Border/0037.png" type="Texture" id=119]
 [ext_resource path="res://Sprites/Border/0046.png" type="Texture" id=120]
+[ext_resource path="res://Sprites/ring map.png" type="Texture" id=121]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 40
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
@@ -168,9 +169,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Telescope" type="Sprite" parent="."]
+[node name="MapRing" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 200, 800 )
+rotation = 0.13439
+texture = ExtResource( 121 )
+
+[node name="Telescope" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.313726 )
+position = Vector2( 200, 805 )
 texture = ExtResource( 69 )
 
 [node name="Compass" type="Sprite" parent="."]
@@ -181,8 +188,8 @@ texture = ExtResource( 67 )
 
 [node name="Vignette" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.392157 )
-position = Vector2( 0, 205.553 )
-scale = Vector2( 2.40017, 1.24141 )
+position = Vector2( 0, 163.303 )
+scale = Vector2( 2.40017, 1.31183 )
 texture = ExtResource( 3 )
 centered = false
 
@@ -210,15 +217,15 @@ __meta__ = {
 }
 
 [node name="MapMini" type="Sprite" parent="Interface/MapCenter"]
-modulate = Color( 1, 1, 1, 0.784314 )
-scale = Vector2( 0.75, 0.75 )
+modulate = Color( 1, 1, 1, 0.823529 )
+scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 5 )
 
 [node name="Map" type="Button" parent="Interface/MapCenter"]
-margin_left = -478.0
-margin_top = -213.0
-margin_right = 476.0
-margin_bottom = 212.0
+margin_left = -509.0
+margin_top = -227.0
+margin_right = 509.0
+margin_bottom = 226.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -291,13 +298,16 @@ __meta__ = {
 [node name="Left" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -161.731
+margin_top = -148.304
 margin_right = 150.0
-margin_bottom = 38.2689
+margin_bottom = 19.696
 focus_mode = 0
 enabled_focus_mode = 0
 text = "<"
 flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Right" type="Button" parent="Interface"]
 anchor_left = 1.0
@@ -305,8 +315,8 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -150.0
-margin_top = -161.731
-margin_bottom = 38.2689
+margin_top = -148.304
+margin_bottom = 19.696
 focus_mode = 0
 enabled_focus_mode = 0
 text = ">"
@@ -324,9 +334,9 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Interface/IndiceArea"]
-margin_left = 100.0
-margin_top = 246.0
-margin_right = 1820.0
+margin_left = 250.0
+margin_top = 250.0
+margin_right = 1670.0
 margin_bottom = 810.0
 color = Color( 0.784314, 0.509804, 0.196078, 1 )
 __meta__ = {
@@ -334,14 +344,10 @@ __meta__ = {
 }
 
 [node name="Text" type="Label" parent="Interface/IndiceArea"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 89.0
-margin_top = 232.0
-margin_right = 1803.0
-margin_bottom = 785.0
+margin_left = 260.0
+margin_top = 260.0
+margin_right = 1660.0
+margin_bottom = 800.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
 __meta__ = {
@@ -349,10 +355,10 @@ __meta__ = {
 }
 
 [node name="IndiceButton" type="Button" parent="Interface/IndiceArea"]
-margin_left = -80.052
-margin_top = 205.0
-margin_right = 1967.95
-margin_bottom = 850.0
+margin_left = -80.0
+margin_top = 166.0
+margin_right = 1968.0
+margin_bottom = 859.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -376,10 +382,10 @@ __meta__ = {
 }
 
 [node name="Border" type="AnimatedSprite" parent="."]
-position = Vector2( 1195.2, 99.459 )
-scale = Vector2( 1.9, 1.9 )
+position = Vector2( 1193.44, 79.802 )
+scale = Vector2( 2.5, 1.4 )
 frames = SubResource( 3 )
-frame = 48
+frame = 13
 playing = true
 
 [node name="FinalRing" type="AnimatedSprite" parent="."]
@@ -387,30 +393,31 @@ visible = false
 position = Vector2( 960, 539.933 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 4 )
-frame = 12
+frame = 25
 playing = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 1748.0
-margin_top = -5.0
+margin_top = -4.77408
 margin_right = 1928.0
-margin_bottom = 206.0
+margin_bottom = 164.0
 color = Color( 0.27451, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BackgroundTitle" type="Sprite" parent="."]
-position = Vector2( 316.769, -222.398 )
+position = Vector2( 315.011, -264.592 )
 scale = Vector2( 0.836133, 0.836133 )
 texture = ExtResource( 4 )
 
 [node name="Exit" type="Button" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -173.0
-margin_top = -3.0
-margin_bottom = 206.0
+margin_left = -172.0
+margin_top = 1.0
+margin_right = 3.0
+margin_bottom = 164.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "X"
@@ -513,10 +520,10 @@ __meta__ = {
 }
 
 [node name="Title" type="Label" parent="."]
-margin_left = 6.0
-margin_top = 2.20529
+margin_left = 16.0
+margin_top = 5.0
 margin_right = 628.0
-margin_bottom = 191.205
+margin_bottom = 191.0
 text = "Chasse aux trésors
 Tolkien
 Médiathèque Jean Ferrat"
@@ -525,8 +532,8 @@ __meta__ = {
 }
 
 [node name="CreditButton" type="Button" parent="."]
-margin_right = 630.0
-margin_bottom = 198.0
+margin_right = 636.0
+margin_bottom = 163.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -562,10 +569,9 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Difficulty"]
-margin_left = -8.0
 margin_top = -10.0
-margin_right = 310.0
-margin_bottom = 399.0
+margin_right = 297.0
+margin_bottom = 372.0
 color = Color( 0.784314, 0.509804, 0.196078, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -586,7 +592,7 @@ __meta__ = {
 }
 
 [node name="Child" type="Button" parent="Difficulty"]
-margin_top = 78.0
+margin_top = 83.0
 margin_right = 300.0
 margin_bottom = 221.0
 focus_mode = 0
@@ -598,9 +604,9 @@ __meta__ = {
 }
 
 [node name="Adult" type="Button" parent="Difficulty"]
-margin_top = 246.688
+margin_top = 247.0
 margin_right = 300.0
-margin_bottom = 389.688
+margin_bottom = 372.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Adulte"
@@ -656,61 +662,68 @@ __meta__ = {
 }
 
 [node name="Ring1" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 734.675, 70.4132 )
+position = Vector2( 734.675, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 884.675, 70.4132 )
+position = Vector2( 884.675, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1034.67, 70.4132 )
+position = Vector2( 1034.67, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1184.67, 70.4132 )
+position = Vector2( 1184.67, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1334.67, 70.4132 )
+position = Vector2( 1334.67, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1484.67, 70.4132 )
+position = Vector2( 1484.67, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1634.67, 70.4132 )
+position = Vector2( 1634.67, 61.3667 )
+scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 17
+frame = 27
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -72.0
-margin_top = 146.0
-margin_right = 533.0
-margin_bottom = 207.0
+margin_left = 41.3544
+margin_top = 115.0
+margin_right = 524.354
+margin_bottom = 176.0
 text = "^Anneaux collectés ^"
 __meta__ = {
 "_edit_use_anchors_": false
