@@ -2,6 +2,8 @@ extends Control
 
 var camera
 
+var frame
+
 var message = 1
 var lock = 6
 var questionStart = lock
@@ -36,19 +38,33 @@ func _process(delta):
 	if lock == 13:
 		$FinalRing.visible = true
 	if lock > 6:
+		frame = $Rings/Ring1.frame
 		$Rings/Ring1.play("metal")
+		$Rings/Ring1.frame = frame
 	if lock > 7:
+		frame = $Rings/Ring2.frame
 		$Rings/Ring2.play("metal")
+		$Rings/Ring2.frame = frame
 	if lock > 8:
+		frame = $Rings/Ring3.frame
 		$Rings/Ring3.play("metal")
+		$Rings/Ring3.frame = frame
 	if lock > 9:
+		frame = $Rings/Ring4.frame
 		$Rings/Ring4.play("metal")
+		$Rings/Ring4.frame = frame
 	if lock > 10:
+		frame = $Rings/Ring5.frame
 		$Rings/Ring5.play("metal")
+		$Rings/Ring5.frame = frame
 	if lock > 11:
+		frame = $Rings/Ring6.frame
 		$Rings/Ring6.play("metal")
+		$Rings/Ring6.frame = frame
 	if lock > 12:
+		frame = $Rings/Ring7.frame
 		$Rings/Ring7.play("metal")
+		$Rings/Ring7.frame = frame
 	
 	if $CameraAnimation.is_playing() == false:
 		camera.rotate_y(-.5*delta)

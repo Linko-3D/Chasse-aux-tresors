@@ -42,6 +42,7 @@ data = PoolVector3Array( 8.7295, 0, 8.8986, 4.6917, 0, 8.8986, 8.7295, 0, -16.32
 [sub_resource type="Animation" id=2]
 resource_name = "1"
 length = 5.0
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:fov")
 tracks/0/interp = 1
@@ -215,12 +216,12 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 10.206, 0 ), Vector3( 0, -16.346, 0 ) ]
+"values": [ Vector3( 0, 10.206, 0 ), Vector3( 0, -27.539, 0 ) ]
 }
 
 [sub_resource type="Animation" id=8]
 resource_name = "7"
-length = 2.7
+length = 20.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:rotation_degrees")
 tracks/0/interp = 1
@@ -228,10 +229,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 2.2, 2.7, 3.5, 4.4, 7.6, 8, 10.2, 10.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 88.2443, 0 ) ]
+"values": [ Vector3( 0, 131.106, 0 ), Vector3( 0, 131.106, 0 ), Vector3( 0, 90.0663, 0 ), Vector3( 0, 90.0663, 0 ), Vector3( 0, 166.886, 0 ), Vector3( 0, 166.886, 0 ), Vector3( 0, 110.062, 0 ), Vector3( 0, 110.062, 0 ), Vector3( 0, 174.119, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:translation")
@@ -240,10 +241,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray(  ),
-"transitions": PoolRealArray(  ),
+"times": PoolRealArray( 0, 2.7, 4.4, 8, 10.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [  ]
+"values": [ Vector3( 4.9624, 2.3, -47.1036 ), Vector3( -0.801773, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -29.959 ), Vector3( -15.0838, 2.3, -25.8348 ) ]
 }
 
 [node name="Map" type="Spatial"]
@@ -1271,10 +1272,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.68386, 2.3, 6.73862 )
 [node name="QuestionMark3" parent="Questions" instance=ExtResource( 35 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82532, 2.3, -9.99049 )
 
+[node name="QuestionMark4" parent="Questions" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19794, 2.3, -33.9691 )
+
+[node name="QuestionMark5" parent="Questions" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73365, 2.3, -48.3219 )
+
+[node name="QuestionMark6" parent="Questions" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0111, 2.3, -23.8055 )
+
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.993931, 0, 0.150707, 0, 1, 0, -0.151452, 0, 0.989045, -3.963, 2.3, -9.991 )
+transform = Transform( 0.819152, 0.573577, 0, -0.573576, 0.819152, 0, 0, 0, 1, 1.6, 1.5, 45 )
 current = true
-fov = 80.0
+fov = 140.0
 
 [node name="Game" parent="Camera" instance=ExtResource( 34 )]
 
