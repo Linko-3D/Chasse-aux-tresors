@@ -375,6 +375,7 @@ modulate = Color( 1, 1, 1, 0.588235 )
 position = Vector2( 1193.44, 79.802 )
 scale = Vector2( 2.5, 1.4 )
 frames = SubResource( 3 )
+frame = 2
 playing = true
 
 [node name="FinalRing" type="AnimatedSprite" parent="."]
@@ -382,7 +383,7 @@ visible = false
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 4 )
-frame = 12
+frame = 27
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -647,7 +648,7 @@ position = Vector2( 734.675, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -655,7 +656,7 @@ position = Vector2( 884.675, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -663,7 +664,7 @@ position = Vector2( 1034.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -671,7 +672,7 @@ position = Vector2( 1184.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -679,7 +680,7 @@ position = Vector2( 1334.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -687,7 +688,7 @@ position = Vector2( 1484.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -695,7 +696,7 @@ position = Vector2( 1634.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 8
+frame = 10
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
