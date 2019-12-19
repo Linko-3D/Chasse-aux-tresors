@@ -12,10 +12,10 @@ var toggle_answer = false
 
 var wasPlayed = false
 var musicOn = true
-var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7", "Victoire !"]
+var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7", "Vous pouvez récupérer l'anneau !"]
 
-var easyQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affiché la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?", "Je suis vieux et sage\nJe ne fais pas mon âge\nAux autres races je fais mes adieux\nEt m’en vais quitter la Terre du Milieu\n\nQui-suis-je ?", "Mon premier est précieux\nTu poses des questions avec mon second\nMon tout est le nom d’un animal\nMais aussi d’une créature du mal\n\nQui suis-je ?", "Tu dors dans mon premier\nMon second retient les portes\nMon tout crache du feu\n\nQui suis-je ?", "D’or et tout rond\nDe Sauron je porte\nLa malédiction\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !"]
-var hardQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affiché la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?", "En ma demeure d’Erebor\nJe veille sur mon or\nL’oiseau frappeur j’attends\nQui réveillera mon feu ardent", "Sombre est mon col\nDe Cirith Ungol\nOù je fus pourfendue\nPar un hobbit résolu", "Des entrailles de la terre\nAux sommets du monde\nUn magicien m’affrontant\nDe gris devint blanc\n\nQui suis-je ?", "Du fond des eaux Il vint\nEt je fus maudit\nSurgit le Destin\nEt par le feu je péris\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !"]
+var easyQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affiché la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?", "Je suis vieux et sage\nJe ne fais pas mon âge\nAux autres races je fais mes adieux\nEt m’en vais quitter la Terre du Milieu\n\nQui-suis-je ?", "Mon premier est précieux\nTu poses des questions avec mon second\nMon tout est le nom d’un animal\nMais aussi d’une créature du mal\n\nQui suis-je ?", "Tu dors dans mon premier\nMon second retient les portes\nMon tout crache du feu\n\nQui suis-je ?", "D’or et tout rond\nDe Sauron je porte\nLa malédiction\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
+var hardQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affiché la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?", "En ma demeure d’Erebor\nJe veille sur mon or\nL’oiseau frappeur j’attends\nQui réveillera mon feu ardent", "Sombre est mon col\nDe Cirith Ungol\nOù je fus pourfendue\nPar un hobbit résolu", "Des entrailles de la terre\nAux sommets du monde\nUn magicien m’affrontant\nDe gris devint blanc\n\nQui suis-je ?", "Du fond des eaux Il vint\nEt je fus maudit\nSurgit le Destin\nEt par le feu je péris\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
 
 var question = easyQuestions
 
@@ -35,8 +35,11 @@ func _ready():
 	$Interface/Right.disabled = true
 
 func _process(delta):
-	if lock == 13:
+	if message == 13:
 		$FinalRing.visible = true
+	else:
+		$FinalRing.visible = false
+	
 	if lock > 6:
 		frame = $Rings/Ring1.frame
 		$Rings/Ring1.play("metal")
@@ -87,6 +90,9 @@ func _process(delta):
 			wasPlayed = true
 		if message == 12:
 			$CameraAnimation.play("7")
+			wasPlayed = true
+		if message == 13:
+			$CameraAnimation.play("8")
 			wasPlayed = true
 	
 	if message == 1:
