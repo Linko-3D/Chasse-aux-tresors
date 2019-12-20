@@ -1,128 +1,77 @@
-[gd_scene load_steps=129 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/grunge vignette.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Paper.jpg" type="Texture" id=4]
-[ext_resource path="res://map.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/RingEmpty/0001.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/RingEmpty/0002.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/RingEmpty/0003.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/RingEmpty/0004.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/RingEmpty/0005.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/RingEmpty/0006.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/RingEmpty/0007.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/RingEmpty/0008.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/RingEmpty/0009.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/RingEmpty/0010.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/RingEmpty/0011.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/RingEmpty/0012.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/RingEmpty/0013.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/RingEmpty/0014.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/RingEmpty/0015.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/RingEmpty/0016.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/RingEmpty/0017.png" type="Texture" id=22]
-[ext_resource path="res://Sprites/RingEmpty/0018.png" type="Texture" id=23]
-[ext_resource path="res://Sprites/RingEmpty/0019.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/RingEmpty/0020.png" type="Texture" id=25]
-[ext_resource path="res://Sprites/RingEmpty/0021.png" type="Texture" id=26]
-[ext_resource path="res://Sprites/RingEmpty/0022.png" type="Texture" id=27]
-[ext_resource path="res://Sprites/RingEmpty/0023.png" type="Texture" id=28]
-[ext_resource path="res://Sprites/RingEmpty/0024.png" type="Texture" id=29]
-[ext_resource path="res://Sprites/RingEmpty/0025.png" type="Texture" id=30]
-[ext_resource path="res://Sprites/RingEmpty/0026.png" type="Texture" id=31]
-[ext_resource path="res://Sprites/RingEmpty/0027.png" type="Texture" id=32]
-[ext_resource path="res://Sprites/RingEmpty/0028.png" type="Texture" id=33]
-[ext_resource path="res://Sprites/RingEmpty/0029.png" type="Texture" id=34]
-[ext_resource path="res://Sprites/RingEmpty/0030.png" type="Texture" id=35]
-[ext_resource path="res://Sprites/Ring/0001.png" type="Texture" id=36]
-[ext_resource path="res://Sprites/Ring/0002.png" type="Texture" id=37]
-[ext_resource path="res://Sprites/Ring/0003.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/Ring/0004.png" type="Texture" id=39]
-[ext_resource path="res://Sprites/Ring/0005.png" type="Texture" id=40]
-[ext_resource path="res://Sprites/Ring/0006.png" type="Texture" id=41]
-[ext_resource path="res://Sprites/Ring/0007.png" type="Texture" id=42]
-[ext_resource path="res://Sprites/Ring/0008.png" type="Texture" id=43]
-[ext_resource path="res://Sprites/Ring/0009.png" type="Texture" id=44]
-[ext_resource path="res://Sprites/Ring/0010.png" type="Texture" id=45]
-[ext_resource path="res://Sprites/Ring/0011.png" type="Texture" id=46]
-[ext_resource path="res://Sprites/Ring/0012.png" type="Texture" id=47]
-[ext_resource path="res://Sprites/Ring/0013.png" type="Texture" id=48]
-[ext_resource path="res://Sprites/Ring/0014.png" type="Texture" id=49]
-[ext_resource path="res://Sprites/Ring/0015.png" type="Texture" id=50]
-[ext_resource path="res://Sprites/Ring/0016.png" type="Texture" id=51]
-[ext_resource path="res://Sprites/Ring/0017.png" type="Texture" id=52]
-[ext_resource path="res://Sprites/Ring/0018.png" type="Texture" id=53]
-[ext_resource path="res://Sprites/Ring/0019.png" type="Texture" id=54]
-[ext_resource path="res://Sprites/Ring/0020.png" type="Texture" id=55]
-[ext_resource path="res://Sprites/Ring/0021.png" type="Texture" id=56]
-[ext_resource path="res://Sprites/Ring/0022.png" type="Texture" id=57]
-[ext_resource path="res://Sprites/Ring/0023.png" type="Texture" id=58]
-[ext_resource path="res://Sprites/Ring/0024.png" type="Texture" id=59]
-[ext_resource path="res://Sprites/Ring/0025.png" type="Texture" id=60]
-[ext_resource path="res://Sprites/Ring/0026.png" type="Texture" id=61]
-[ext_resource path="res://Sprites/Ring/0027.png" type="Texture" id=62]
-[ext_resource path="res://Sprites/Ring/0028.png" type="Texture" id=63]
-[ext_resource path="res://Sprites/Ring/0029.png" type="Texture" id=64]
-[ext_resource path="res://Sprites/Ring/0030.png" type="Texture" id=65]
-[ext_resource path="res://Sprites/Ring/0031.png" type="Texture" id=66]
-[ext_resource path="res://Sprites/compass.png" type="Texture" id=67]
-[ext_resource path="res://MapClick.gd" type="Script" id=68]
-[ext_resource path="res://Sprites/telescope.png" type="Texture" id=69]
-[ext_resource path="res://Sprites/Border/0001.png" type="Texture" id=70]
-[ext_resource path="res://Sprites/Border/0002.png" type="Texture" id=71]
-[ext_resource path="res://Sprites/Border/0003.png" type="Texture" id=72]
-[ext_resource path="res://Sprites/Border/0014.png" type="Texture" id=73]
-[ext_resource path="res://Sprites/Border/0023.png" type="Texture" id=74]
-[ext_resource path="res://Sprites/Border/0008.png" type="Texture" id=75]
-[ext_resource path="res://Sprites/Border/0028.png" type="Texture" id=76]
-[ext_resource path="res://Sprites/Border/0022.png" type="Texture" id=77]
-[ext_resource path="res://Sprites/Border/0030.png" type="Texture" id=78]
-[ext_resource path="res://Sprites/Border/0033.png" type="Texture" id=79]
-[ext_resource path="res://Sprites/Border/0009.png" type="Texture" id=80]
-[ext_resource path="res://Sprites/Border/0019.png" type="Texture" id=81]
-[ext_resource path="res://Sprites/Border/0010.png" type="Texture" id=82]
-[ext_resource path="res://Sprites/Border/0004.png" type="Texture" id=83]
-[ext_resource path="res://Sprites/Border/0012.png" type="Texture" id=84]
-[ext_resource path="res://Sprites/Border/0007.png" type="Texture" id=85]
-[ext_resource path="res://Sprites/Border/0005.png" type="Texture" id=86]
-[ext_resource path="res://Sprites/Border/0018.png" type="Texture" id=87]
-[ext_resource path="res://Sprites/Border/0024.png" type="Texture" id=88]
-[ext_resource path="res://Sprites/Border/0031.png" type="Texture" id=89]
-[ext_resource path="res://Sprites/Border/0034.png" type="Texture" id=90]
-[ext_resource path="res://Sprites/Border/0029.png" type="Texture" id=91]
-[ext_resource path="res://Sprites/Border/0035.png" type="Texture" id=92]
-[ext_resource path="res://Sprites/Border/0021.png" type="Texture" id=93]
-[ext_resource path="res://Sprites/Border/0015.png" type="Texture" id=94]
-[ext_resource path="res://Sprites/Border/0020.png" type="Texture" id=95]
-[ext_resource path="res://Sprites/Border/0011.png" type="Texture" id=96]
-[ext_resource path="res://Sprites/Border/0013.png" type="Texture" id=97]
-[ext_resource path="res://Sprites/Border/0025.png" type="Texture" id=98]
-[ext_resource path="res://Sprites/Border/0017.png" type="Texture" id=99]
-[ext_resource path="res://Sprites/Border/0006.png" type="Texture" id=100]
-[ext_resource path="res://Sprites/Border/0016.png" type="Texture" id=101]
-[ext_resource path="res://Sprites/Border/0026.png" type="Texture" id=102]
-[ext_resource path="res://Sprites/Border/0027.png" type="Texture" id=103]
-[ext_resource path="res://Sprites/Border/0032.png" type="Texture" id=104]
-[ext_resource path="res://Sprites/Border/0050.png" type="Texture" id=105]
-[ext_resource path="res://Sprites/Border/0041.png" type="Texture" id=106]
-[ext_resource path="res://Sprites/Border/0051.png" type="Texture" id=107]
-[ext_resource path="res://Sprites/Border/0043.png" type="Texture" id=108]
-[ext_resource path="res://Sprites/Border/0036.png" type="Texture" id=109]
-[ext_resource path="res://Sprites/Border/0038.png" type="Texture" id=110]
-[ext_resource path="res://Sprites/Border/0039.png" type="Texture" id=111]
-[ext_resource path="res://Sprites/Border/0042.png" type="Texture" id=112]
-[ext_resource path="res://Sprites/Border/0048.png" type="Texture" id=113]
-[ext_resource path="res://Sprites/Border/0044.png" type="Texture" id=114]
-[ext_resource path="res://Sprites/Border/0040.png" type="Texture" id=115]
-[ext_resource path="res://Sprites/Border/0045.png" type="Texture" id=116]
-[ext_resource path="res://Sprites/Border/0047.png" type="Texture" id=117]
-[ext_resource path="res://Sprites/Border/0049.png" type="Texture" id=118]
-[ext_resource path="res://Sprites/Border/0037.png" type="Texture" id=119]
-[ext_resource path="res://Sprites/Border/0046.png" type="Texture" id=120]
-[ext_resource path="res://Sprites/ring map.png" type="Texture" id=121]
-[ext_resource path="res://Sprites/quit.png" type="Texture" id=122]
-[ext_resource path="res://Sprites/arrows.png" type="Texture" id=123]
+[ext_resource path="res://Sprites/ring map.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/telescope.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/compass.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/grunge vignette.png" type="Texture" id=6]
+[ext_resource path="res://MapClick.gd" type="Script" id=7]
+[ext_resource path="res://map.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Paper.jpg" type="Texture" id=9]
+[ext_resource path="res://Sprites/arrows.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Ring/0001.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Ring/0002.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Ring/0003.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Ring/0004.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Ring/0005.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Ring/0006.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Ring/0007.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Ring/0008.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Ring/0009.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Ring/0010.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Ring/0011.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Ring/0012.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Ring/0013.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Ring/0014.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Ring/0015.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Ring/0016.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Ring/0017.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Ring/0018.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Ring/0019.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Ring/0020.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Ring/0021.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Ring/0022.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Ring/0023.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Ring/0024.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Ring/0025.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Ring/0026.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Ring/0027.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Ring/0028.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Ring/0029.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Ring/0030.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Ring/0031.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/quit.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/RingEmpty/0001.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/RingEmpty/0002.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/RingEmpty/0003.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/RingEmpty/0004.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/RingEmpty/0005.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/RingEmpty/0006.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/RingEmpty/0007.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/RingEmpty/0008.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/RingEmpty/0009.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/RingEmpty/0010.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/RingEmpty/0011.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/RingEmpty/0012.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/RingEmpty/0013.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/RingEmpty/0014.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/RingEmpty/0015.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/RingEmpty/0016.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/RingEmpty/0017.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/RingEmpty/0018.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/RingEmpty/0019.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/RingEmpty/0020.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/RingEmpty/0021.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/RingEmpty/0022.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/RingEmpty/0023.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/RingEmpty/0024.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/RingEmpty/0025.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/RingEmpty/0026.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/RingEmpty/0027.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/RingEmpty/0028.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/RingEmpty/0029.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/RingEmpty/0030.png" type="Texture" id=72]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -133,17 +82,9 @@ font_data = ExtResource( 1 )
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
 
-[sub_resource type="SpriteFrames" id=3]
-animations = [ {
-"frames": [ ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 83 ), ExtResource( 86 ), ExtResource( 100 ), ExtResource( 85 ), ExtResource( 75 ), ExtResource( 80 ), ExtResource( 82 ), ExtResource( 96 ), ExtResource( 84 ), ExtResource( 97 ), ExtResource( 73 ), ExtResource( 94 ), ExtResource( 101 ), ExtResource( 99 ), ExtResource( 87 ), ExtResource( 81 ), ExtResource( 95 ), ExtResource( 93 ), ExtResource( 77 ), ExtResource( 74 ), ExtResource( 88 ), ExtResource( 98 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 76 ), ExtResource( 91 ), ExtResource( 78 ), ExtResource( 89 ), ExtResource( 104 ), ExtResource( 79 ), ExtResource( 90 ), ExtResource( 92 ), ExtResource( 109 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 115 ), ExtResource( 106 ), ExtResource( 112 ), ExtResource( 108 ), ExtResource( 114 ), ExtResource( 116 ), ExtResource( 120 ), ExtResource( 117 ), ExtResource( 113 ), ExtResource( 118 ), ExtResource( 105 ), ExtResource( 107 ) ],
-"loop": true,
-"name": "default",
-"speed": 30.0
-} ]
-
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
 "loop": true,
 "name": "default",
 "speed": 30.0
@@ -151,12 +92,12 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
+"frames": [ ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ) ],
 "loop": true,
 "name": "empty",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
 "loop": true,
 "name": "metal",
 "speed": 30.0
@@ -175,24 +116,24 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 200, 800 )
 rotation = 0.13439
-texture = ExtResource( 121 )
+texture = ExtResource( 3 )
 
 [node name="Telescope" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 200, 805 )
-texture = ExtResource( 69 )
+texture = ExtResource( 4 )
 
 [node name="Compass" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.313726 )
 position = Vector2( 1749.43, 930 )
 scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 67 )
+texture = ExtResource( 5 )
 
 [node name="Vignette" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.392157 )
 position = Vector2( 0, 163.303 )
 scale = Vector2( 2.40017, 1.31183 )
-texture = ExtResource( 3 )
+texture = ExtResource( 6 )
 centered = false
 
 [node name="ColorRect3" type="ColorRect" parent="."]
@@ -213,7 +154,7 @@ __meta__ = {
 
 [node name="MapCenter" type="Position2D" parent="Interface"]
 position = Vector2( 1904.96, 483.929 )
-script = ExtResource( 68 )
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -221,7 +162,7 @@ __meta__ = {
 [node name="MapMini" type="Sprite" parent="Interface/MapCenter"]
 modulate = Color( 1, 1, 1, 0.823529 )
 scale = Vector2( 0.8, 0.8 )
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
 
 [node name="Map" type="Button" parent="Interface/MapCenter"]
 margin_left = -509.0
@@ -239,17 +180,17 @@ __meta__ = {
 position = Vector2( 978.164, 1614.78 )
 rotation = 1.5708
 scale = Vector2( 1.73661, 1.73661 )
-texture = ExtResource( 4 )
+texture = ExtResource( 9 )
 
 [node name="ColorRect" type="Sprite" parent="Interface"]
 position = Vector2( 66, 1014 )
 scale = Vector2( 0.521076, 0.521076 )
-texture = ExtResource( 123 )
+texture = ExtResource( 10 )
 
 [node name="ColorRect2" type="Sprite" parent="Interface"]
 position = Vector2( 1854, 1014 )
 scale = Vector2( 0.521076, 0.521076 )
-texture = ExtResource( 123 )
+texture = ExtResource( 10 )
 
 [node name="Answer" type="Button" parent="Interface"]
 anchor_left = 0.5
@@ -370,31 +311,30 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Border" type="AnimatedSprite" parent="."]
-modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( 1193.44, 79.802 )
-scale = Vector2( 2.5, 1.4 )
-frames = SubResource( 3 )
-frame = 2
-playing = true
+[node name="BackgroundRings" type="ColorRect" parent="."]
+margin_left = 637.374
+margin_top = -10.274
+margin_right = 1761.37
+margin_bottom = 163.726
+color = Color( 0.243137, 0, 1, 0.196078 )
 
 [node name="FinalRing" type="AnimatedSprite" parent="."]
 visible = false
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 4 )
-frame = 27
+frame = 23
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
 position = Vector2( 1838.27, 81.3365 )
 scale = Vector2( 0.969083, 0.969083 )
-texture = ExtResource( 122 )
+texture = ExtResource( 42 )
 
 [node name="BackgroundTitle" type="Sprite" parent="."]
 position = Vector2( 315.011, -264.592 )
 scale = Vector2( 0.836133, 0.836133 )
-texture = ExtResource( 4 )
+texture = ExtResource( 9 )
 
 [node name="Exit" type="Button" parent="."]
 anchor_left = 1.0
@@ -488,7 +428,7 @@ __meta__ = {
 position = Vector2( 549.576, 125.39 )
 rotation = 4.71239
 scale = Vector2( 0.330281, 1.07782 )
-texture = ExtResource( 4 )
+texture = ExtResource( 9 )
 
 [node name="CheckAnswerText" type="Label" parent="CheckAnswer"]
 anchor_right = 1.0
@@ -527,7 +467,7 @@ __meta__ = {
 visible = false
 position = Vector2( 960, 563.37 )
 scale = Vector2( 1.25, 1.25 )
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
 
 [node name="DisableInterface" type="Button" parent="."]
 visible = false
@@ -611,7 +551,7 @@ __meta__ = {
 position = Vector2( 928.031, 535.167 )
 rotation = -1.5708
 scale = Vector2( 0.583414, 0.655875 )
-texture = ExtResource( 4 )
+texture = ExtResource( 9 )
 
 [node name="Label" type="Label" parent="Credit"]
 margin_left = 633.0
@@ -648,7 +588,7 @@ position = Vector2( 734.675, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -656,7 +596,7 @@ position = Vector2( 884.675, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -664,7 +604,7 @@ position = Vector2( 1034.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -672,7 +612,7 @@ position = Vector2( 1184.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -680,7 +620,7 @@ position = Vector2( 1334.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -688,7 +628,7 @@ position = Vector2( 1484.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -696,7 +636,7 @@ position = Vector2( 1634.67, 61.3667 )
 scale = Vector2( 1.3, 1.3 )
 frames = SubResource( 5 )
 animation = "empty"
-frame = 10
+frame = 4
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
