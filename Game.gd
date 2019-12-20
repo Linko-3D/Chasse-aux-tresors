@@ -29,12 +29,15 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
+	$Intro.frame = 1
+	$Intro.play()
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
 
 func _process(delta):
+
 	if message == 13:
 		$FinalRing.visible = true
 	else:
