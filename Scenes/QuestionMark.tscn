@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Question mark.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Scenes/QuestionMark.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Materials/QuestionMark.tres" type="Material" id=3]
+[ext_resource path="res://Assets/Materials/QuestionMark.tres" type="Material" id=2]
+[ext_resource path="res://Scenes/QuestionMark.gd" type="Script" id=3]
 
 [node name="QuestionMark" type="MeshInstance"]
 mesh = ExtResource( 1 )
-material/0 = ExtResource( 3 )
-script = ExtResource( 2 )
+material/0 = ExtResource( 2 )
+script = ExtResource( 3 )
