@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Correct answer.wav-99f119147413ebf5d6a72301afda332e.sample"
+
+[deps]
+
+source_file="res://Sounds/Correct answer.wav"
+dest_files=[ "res://.import/Correct answer.wav-99f119147413ebf5d6a72301afda332e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

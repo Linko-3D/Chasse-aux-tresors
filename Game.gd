@@ -185,6 +185,7 @@ func _on_ValidAnswer_pressed():
 	$ButtonPressedSound.play()
 	$CheckAnswer.visible = true
 	if $GiveAnswer.text == answers[message] and message == lock:
+		$CorrectSound.play()
 		$CheckAnswer/CheckAnswerText.text = "Bonne réponse !"
 		lock += 1
 	else:
