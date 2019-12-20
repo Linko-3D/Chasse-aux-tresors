@@ -29,7 +29,8 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
-	$Intro.frame = 1
+	$Intro.frame = 0
+	$Intro.visible = true
 	$Intro.play()
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	$Interface.visible = false
@@ -122,6 +123,7 @@ func _on_Exit_pressed():
 	get_tree().quit()
 
 func _on_Right_pressed():
+	$ButtonPressedSound.play()
 	wasPlayed = false
 	if message < maxmessage:
 		message += 1
@@ -130,11 +132,13 @@ func _on_Right_pressed():
 		$Right.disabled = true
 
 func _on_Left_pressed():
+	$ButtonPressedSound.play()
 	if message > 1:
 		message -= 1
 		$Interface/Right.disabled = false
 
 func _on_Instruction_pressed():
+	$ButtonPressedSound.play()
 	if toggle_instruction == false:
 		$Interface/Left.disabled = true
 		$Interface/Right.disabled = true
@@ -149,11 +153,12 @@ func _on_Instruction_pressed():
 		$Interface/Answer.disabled = false
 
 func _on_IndiceArea_pressed():
+	$ButtonPressedSound.play()
 	$Interface/Instruction.pressed = false
 	_on_Instruction_pressed()
 
 func _on_Answer_pressed(): #adjust visibility
-	
+	$ButtonPressedSound.play()
 	$GiveAnswer.text = ""
 	
 	if toggle_answer == false:		
@@ -177,6 +182,7 @@ func _on_Answer_pressed(): #adjust visibility
 		toggle_answer = false
 
 func _on_ValidAnswer_pressed():
+	$ButtonPressedSound.play()
 	$CheckAnswer.visible = true
 	if $GiveAnswer.text == answers[message] and message == lock:
 		$CheckAnswer/CheckAnswerText.text = "Bonne réponse !"
@@ -184,7 +190,8 @@ func _on_ValidAnswer_pressed():
 	else:
 		$CheckAnswer/CheckAnswerText.text = "Mauvaise réponse !"
 	
-func _on_CheckAnswer_pressed():	
+func _on_CheckAnswer_pressed():
+	$ButtonPressedSound.play()
 	if toggle_answer == true:
 		$Interface/Instruction.disabled = false
 		$Interface/Left.disabled = false
@@ -200,6 +207,7 @@ func _on_CheckAnswer_pressed():
 	$GiveAnswer.text = ""
 
 func _on_ClearAnswer_pressed():
+	$ButtonPressedSound.play()
 	$GiveAnswer.text = ""
 
 func _on_CheckBox_pressed():
@@ -215,12 +223,14 @@ func _on_DisableInterface_pressed():
 	$MapZoomed.visible = false
 
 func _on_Child_pressed():
+	$ButtonPressedSound.play()
 	question = easyQuestions
 	answers = easyAnswers
 	$Difficulty.visible = false
 	$Interface.visible = true
 
 func _on_Adult_pressed():
+	$ButtonPressedSound.play()
 	question = hardQuestions
 	answers = hardAnswers
 	$Difficulty.visible = false
@@ -230,6 +240,7 @@ func _on_Restart_pressed():
 	get_tree().reload_current_scene()
 
 func _on_IndiceButton_pressed():
+	$ButtonPressedSound.play()
 	toggle_instruction = false
 	$Interface/Left.disabled = false
 	$Interface/Right.disabled = false
@@ -237,10 +248,13 @@ func _on_IndiceButton_pressed():
 	$Interface/Answer.disabled = false
 
 func _on_CreditButton_pressed():
+	$ButtonPressedSound.play()
 	$Credit.visible = !$Credit.visible
 
 func _on_HideCredit_pressed():
+	$ButtonPressedSound.play()
 	$Credit.visible = false
 
 func _on_CloseQuestion_pressed():
+	$ButtonPressedSound.play()	
 	_on_Answer_pressed()
