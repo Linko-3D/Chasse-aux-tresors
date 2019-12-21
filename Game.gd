@@ -253,6 +253,7 @@ func _on_DisableInterface_pressed():
 	$MapZoomed.visible = false
 
 func _on_Child_pressed():
+	$BlackBorders.queue_free()
 	$ButtonPressedSound.play()
 	$Interface/MapChild.visible = true
 	question = easyQuestions
@@ -263,6 +264,7 @@ func _on_Child_pressed():
 	$Interface.visible = true
 
 func _on_Adult_pressed():
+	$BlackBorders.queue_free()
 	$ButtonPressedSound.play()
 	question = hardQuestions
 	answers = hardAnswers
