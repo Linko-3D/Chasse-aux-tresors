@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://Mediatheque.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Materials/White.material" type="Material" id=2]
@@ -80,6 +80,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=3]
+resource_name = "adult 2"
 length = 8.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -107,7 +108,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-resource_name = "3"
+resource_name = "adult 3"
 length = 5.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -135,7 +136,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-resource_name = "4"
+resource_name = "adult 4"
 length = 16.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -163,7 +164,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-resource_name = "5"
+resource_name = "adult 5"
 length = 4.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -191,7 +192,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-resource_name = "6"
+resource_name = "adult 6"
 length = 3.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
@@ -203,7 +204,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector3( 3.53, 2.3, -42.983 ), Vector3( 4.49117, 2.3, -47.7096 ) ]
+"values": [ Vector3( 3.53, 2.3, -42.983 ), Vector3( 4.73557, 2.3, -48.9926 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -215,11 +216,11 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 3.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 10.206, 0 ), Vector3( 0, -24.258, 0 ) ]
+"values": [ Vector3( 0, 10.206, 0 ), Vector3( 0, -1.164, 0 ) ]
 }
 
 [sub_resource type="Animation" id=8]
-resource_name = "7"
+resource_name = "adult 7"
 length = 11.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:rotation_degrees")
@@ -243,12 +244,12 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 2.7, 4.4, 8, 11 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 4.491, 2.3, -47.71 ), Vector3( -0.801773, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -29.959 ), Vector3( -15.0838, 2.3, -25.8348 ) ]
+"values": [ Vector3( 4.736, 2.3, -48.993 ), Vector3( -0.801773, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -41.1086 ), Vector3( -4.35565, 2.3, -29.959 ), Vector3( -15.0838, 2.3, -25.8348 ) ]
 }
 
-[sub_resource type="Animation" id=9]
-resource_name = "8"
-length = 4.0
+[sub_resource type="Animation" id=10]
+resource_name = "child 2"
+length = 10.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("..:translation")
 tracks/0/interp = 1
@@ -256,10 +257,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.6, 3, 4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 2.6, 4.1, 7.5, 8.8, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -15.0838, 2.3, -25.8348 ), Vector3( -20.3007, 2.3, -24.8764 ), Vector3( -23.775, 2.3, -21.598 ), Vector3( -24.5992, 1.65778, -20.7739 ) ]
+"values": [ Vector3( 2.80636, 2.3, 39.0506 ), Vector3( 2.80636, 2.3, 26.2554 ), Vector3( -4.34089, 2.3, 20.9609 ), Vector3( -4.341, 2.3, 5.077 ), Vector3( 1.86282, 2.3, 3.75342 ), Vector3( 2.80636, 2.3, -0.658511 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("..:rotation_degrees")
@@ -268,10 +269,178 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.3, 3, 4 ),
+"times": PoolRealArray( 0, 2.2, 2.6, 3.7, 4.1, 6.9, 7.5, 8.3, 8.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 4.178, 0 ), Vector3( 0, 4.178, 0 ), Vector3( 0, 47.516, 0 ), Vector3( 0, 47.516, 0 ), Vector3( 0, 4.178, 0 ), Vector3( 0, 4.178, 0 ), Vector3( 0, -70.175, 0 ), Vector3( 0, -70.175, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "child 3"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.3, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 2.80636, 2.3, -0.658511 ), Vector3( 2.16835, 2.3, -3.1707 ), Vector3( 3.53323, 2.3, -4.8455 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.3, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, -55.226, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "child 4"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4.5, 4.9, 5.6, 6.6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 3.53323, 2.3, -4.8455 ), Vector3( -9.66508, 2.3, -28.7073 ), Vector3( -11.4539, 2.3, -30.8896 ), Vector3( -11.8704, 2.3, -35.4642 ), Vector3( -11.148, 2.3, -42.3876 ), Vector3( -18.2491, 2.3, -48.8297 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4.2, 4.5, 5.7, 6.1, 6.6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 26.346, 0 ), Vector3( 0, 26.346, 0 ), Vector3( 0, 45.5855, 0 ), Vector3( 0, 18.545, 0 ), Vector3( 0, 21.2584, 0 ), Vector3( 0, 50.5476, 0 ), Vector3( 0, 26.346, 0 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "child 5"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( -18.249, 2.3, -48.83 ), Vector3( -17.0153, 2.3, -40.9726 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.7, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -172.575, 0 ), Vector3( 0, -172.575, 0 ), Vector3( 0, -96.832, 0 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "child 6"
+length = 2.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -17.0153, 2.3, -40.9726 ), Vector3( -21.9314, 2.3, -35.7614 ), Vector3( -21.7305, 2.3, -34.0132 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 136.669, 0 ), Vector3( 0, 136.669, 0 ), Vector3( 0, 179.768, 0 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "child 7"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -21.731, 2.3, -34.013 ), Vector3( -19.6191, 2.3, -33.7482 ), Vector3( -15.084, 2.3, -25.835 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 106.722, 0 ), Vector3( 0, 101.998, 0 ), Vector3( 0, 106.722, 0 ), Vector3( -83.256, 106.722, 0 ) ]
+"values": [ Vector3( 0, -90.04, 0 ), Vector3( 0, -90.04, 0 ), Vector3( 0, -152.072, 0 ), Vector3( 0, -178.905, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "victory"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("..:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15.0838, 2.3, -25.8348 ), Vector3( -15.0429, 2.3, -24.3234 ), Vector3( -15.0333, 1.96939, -23.9711 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("..:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -178.449, 0 ), Vector3( 0, -178.449, 0 ), Vector3( -84.54, -178.449, 0 ) ]
 }
 
 [node name="Map" type="Spatial"]
@@ -540,6 +709,33 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.2655
 
 [node name="Shelf110" parent="Props/Shelves" instance=ExtResource( 5 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.20009, 0, -50.2855 )
+
+[node name="Shelf113" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.525954, 0, -50.2855 )
+
+[node name="Shelf114" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.52632, 0, -50.2855 )
+
+[node name="Shelf116" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.52495, 0, -50.2855 )
+
+[node name="Shelf115" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.52532, 0, -50.2855 )
+
+[node name="Shelf120" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.4313, 0, -50.2855 )
+
+[node name="Shelf121" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -24.4243, 0, -50.2855 )
+
+[node name="Shelf119" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.431, 0, -50.2855 )
+
+[node name="Shelf118" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18.4324, 0, -50.2855 )
+
+[node name="Shelf117" parent="Props/Shelves" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.432, 0, -50.2855 )
 
 [node name="Shelf10" parent="Props/Shelves" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -34 )
@@ -1254,7 +1450,7 @@ transform = Transform( -0.0207156, 0, 0.999785, 0, 1, 0, -0.999785, 0, -0.020715
 transform = Transform( 0.0566926, 0, -0.998392, 0, 1, 0, 0.998392, 0, 0.0566926, 7.96475, 0, -47.3306 )
 
 [node name="SofaSolo5" parent="Props/SofaSolo" instance=ExtResource( 30 )]
-transform = Transform( 0.999616, 0, 0.0277121, 0, 1, 0, -0.0277121, 0, 0.999616, 4.70937, 0, -48.444 )
+transform = Transform( 0.952709, 0, -0.303884, 0, 1, 0, 0.303884, 0, 0.952709, 6.59145, 0, -48.4962 )
 
 [node name="SofaSolo4" parent="Props/SofaSolo" instance=ExtResource( 30 )]
 transform = Transform( -0.0786855, 0, -0.996899, 0, 1, 0, 0.996899, 0, -0.0786855, 7.6237, 0, -44.862 )
@@ -1304,7 +1500,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82532, 2.3, -9.99049 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19794, 2.3, -33.9691 )
 
 [node name="QuestionMark5" parent="QuestionsAdult" instance=ExtResource( 34 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73365, 2.3, -48.3219 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73365, 2.3, -49.4617 )
 
 [node name="QuestionMark7" parent="QuestionsAdult" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35696, 2.3, -42.9884 )
@@ -1312,8 +1508,32 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35696, 2.3, -42.9884 )
 [node name="QuestionMark6" parent="QuestionsAdult" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0111, 2.3, -23.8055 )
 
+[node name="QuestionsChild" type="Spatial" parent="."]
+visible = false
+
+[node name="QuestionMark" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.211, 2.3, 39.005 )
+
+[node name="QuestionMark2" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.24179, 2.3, -1.12859 )
+
+[node name="QuestionMark3" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.06717, 2.3, -5.27715 )
+
+[node name="QuestionMark4" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4454, 2.3, -49.5607 )
+
+[node name="QuestionMark5" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5217, 2.3, -40.9247 )
+
+[node name="QuestionMark6" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8165, 2.3, -33.6512 )
+
+[node name="QuestionMark7" parent="QuestionsChild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0393, 2.3, -23.8995 )
+
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.287728, -0.951085, 0.112467, 0, 0.117433, 0.993081, -0.957712, 0.285737, -0.0337889, -24.5992, 1.65778, -20.7739 )
+transform = Transform( -0.999817, 0, -0.0191099, 0, 1, 0, 0.0191099, 0, -0.999817, -15.084, 2.3, -25.835 )
 current = true
 fov = 140.0
 
@@ -1322,10 +1542,16 @@ fov = 140.0
 [node name="CameraAnimation" type="AnimationPlayer" parent="Camera/Game"]
 autoplay = "1"
 anims/1 = SubResource( 2 )
-anims/2 = SubResource( 3 )
-anims/3 = SubResource( 4 )
-anims/4 = SubResource( 5 )
-anims/5 = SubResource( 6 )
-anims/6 = SubResource( 7 )
-anims/7 = SubResource( 8 )
-anims/8 = SubResource( 9 )
+"anims/adult 2" = SubResource( 3 )
+"anims/adult 3" = SubResource( 4 )
+"anims/adult 4" = SubResource( 5 )
+"anims/adult 5" = SubResource( 6 )
+"anims/adult 6" = SubResource( 7 )
+"anims/adult 7" = SubResource( 8 )
+"anims/child 2" = SubResource( 10 )
+"anims/child 3" = SubResource( 11 )
+"anims/child 4" = SubResource( 12 )
+"anims/child 5" = SubResource( 13 )
+"anims/child 6" = SubResource( 14 )
+"anims/child 7" = SubResource( 15 )
+anims/victory = SubResource( 9 )

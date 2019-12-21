@@ -1,6 +1,7 @@
 extends Control
 
 var camera
+
 var questionsChild
 var questionsAdult
 
@@ -36,12 +37,12 @@ func _ready():
 	$Intro.play()
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	questionsAdult = get_tree().get_root().find_node("QuestionsAdult", true, false)
+	questionsChild = get_tree().get_root().find_node("QuestionsAdult", true, false)
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
 
 func _process(delta):
-
 	if message == 13:
 		$FinalRing.visible = true
 	else:
@@ -78,31 +79,53 @@ func _process(delta):
 	
 	if $CameraAnimation.is_playing() == false:
 		camera.rotate_y(0.5*delta)
-		
+	
+	# Animations
+	
 	if wasPlayed == false:
 		if easy:
-			pass
-		else:
 			if message == 7:
-				$CameraAnimation.play("2 adulte")
+				$CameraAnimation.play("child 2")
 				wasPlayed = true
 			if message == 8:
-				$CameraAnimation.play("3 adulte")
+				$CameraAnimation.play("child 3")
 				wasPlayed = true
 			if message == 9:
-				$CameraAnimation.play("4 adulte")
+				$CameraAnimation.play("child 4")
 				wasPlayed = true
 			if message == 10:
-				$CameraAnimation.play("5 adulte")
+				$CameraAnimation.play("child 5")
 				wasPlayed = true
 			if message == 11:
-				$CameraAnimation.play("6 adulte")
+				$CameraAnimation.play("child 6")
 				wasPlayed = true
 			if message == 12:
-				$CameraAnimation.play("7 adulte")
+				$CameraAnimation.play("child 7")
 				wasPlayed = true
 			if message == 13:
-				$CameraAnimation.play("8 adulte")
+				$CameraAnimation.play("victory")
+				wasPlayed = true
+		else:
+			if message == 7:
+				$CameraAnimation.play("adult 2")
+				wasPlayed = true
+			if message == 8:
+				$CameraAnimation.play("adult 3")
+				wasPlayed = true
+			if message == 9:
+				$CameraAnimation.play("adult 4")
+				wasPlayed = true
+			if message == 10:
+				$CameraAnimation.play("adult 5")
+				wasPlayed = true
+			if message == 11:
+				$CameraAnimation.play("adult 6")
+				wasPlayed = true
+			if message == 12:
+				$CameraAnimation.play("adult 7")
+				wasPlayed = true
+			if message == 13:
+				$CameraAnimation.play("victory")
 				wasPlayed = true
 	
 	if message == 1:
@@ -235,6 +258,7 @@ func _on_Child_pressed():
 	question = easyQuestions
 	answers = easyAnswers
 	easy = true
+	questionsChild.visible = true
 	$Difficulty.visible = false
 	$Interface.visible = true
 
