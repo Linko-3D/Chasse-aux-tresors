@@ -1,6 +1,8 @@
 extends Control
 
 var camera
+var questionsChild
+var questionsAdult
 
 var frame
 
@@ -33,6 +35,7 @@ func _ready():
 	$Intro.visible = true
 	$Intro.play()
 	camera = get_tree().get_root().find_node("Camera", true, false)
+	questionsAdult = get_tree().get_root().find_node("QuestionsAdult", true, false)
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
@@ -77,27 +80,30 @@ func _process(delta):
 		camera.rotate_y(0.5*delta)
 		
 	if wasPlayed == false:
-		if message == 7:
-			$CameraAnimation.play("2")
-			wasPlayed = true
-		if message == 8:
-			$CameraAnimation.play("3")
-			wasPlayed = true
-		if message == 9:
-			$CameraAnimation.play("4")
-			wasPlayed = true
-		if message == 10:
-			$CameraAnimation.play("5")
-			wasPlayed = true
-		if message == 11:
-			$CameraAnimation.play("6")
-			wasPlayed = true
-		if message == 12:
-			$CameraAnimation.play("7")
-			wasPlayed = true
-		if message == 13:
-			$CameraAnimation.play("8")
-			wasPlayed = true
+		if easy:
+			pass
+		else:
+			if message == 7:
+				$CameraAnimation.play("2 adulte")
+				wasPlayed = true
+			if message == 8:
+				$CameraAnimation.play("3 adulte")
+				wasPlayed = true
+			if message == 9:
+				$CameraAnimation.play("4 adulte")
+				wasPlayed = true
+			if message == 10:
+				$CameraAnimation.play("5 adulte")
+				wasPlayed = true
+			if message == 11:
+				$CameraAnimation.play("6 adulte")
+				wasPlayed = true
+			if message == 12:
+				$CameraAnimation.play("7 adulte")
+				wasPlayed = true
+			if message == 13:
+				$CameraAnimation.play("8 adulte")
+				wasPlayed = true
 	
 	if message == 1:
 		$Interface/Left.disabled = true
@@ -225,8 +231,10 @@ func _on_DisableInterface_pressed():
 
 func _on_Child_pressed():
 	$ButtonPressedSound.play()
+	$Interface/MapChild.visible = true
 	question = easyQuestions
 	answers = easyAnswers
+	easy = true
 	$Difficulty.visible = false
 	$Interface.visible = true
 
@@ -234,6 +242,9 @@ func _on_Adult_pressed():
 	$ButtonPressedSound.play()
 	question = hardQuestions
 	answers = hardAnswers
+	easy = false
+	questionsAdult.visible = true
+	$Interface/MapAdult.visible = true
 	$Difficulty.visible = false
 	$Interface.visible = true
 
@@ -257,5 +268,5 @@ func _on_HideCredit_pressed():
 	$Credit.visible = false
 
 func _on_CloseQuestion_pressed():
-	$ButtonPressedSound.play()	
+	$ButtonPressedSound.play()
 	_on_Answer_pressed()
