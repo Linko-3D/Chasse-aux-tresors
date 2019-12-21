@@ -353,7 +353,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.7, 2.3 ),
+"times": PoolRealArray( 0, 1.6, 2.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector3( 0, -172.575, 0 ), Vector3( 0, -172.575, 0 ), Vector3( 0, -96.832, 0 ) ]
@@ -1509,7 +1509,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35696, 2.3, -42.9884 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0111, 2.3, -23.8055 )
 
 [node name="QuestionsChild" type="Spatial" parent="."]
-visible = false
 
 [node name="QuestionMark" parent="QuestionsChild" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.211, 2.3, 39.005 )
@@ -1533,7 +1532,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8165, 2.3, -33.6512 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0393, 2.3, -23.8995 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.999817, 0, -0.0191099, 0, 1, 0, 0.0191099, 0, -0.999817, -15.084, 2.3, -25.835 )
+transform = Transform( -0.118959, 0, -0.992899, 0, 1, 0, 0.992899, 0, -0.118959, -17.0153, 2.3, -40.9726 )
 current = true
 fov = 140.0
 

@@ -37,7 +37,7 @@ func _ready():
 	$Intro.play()
 	camera = get_tree().get_root().find_node("Camera", true, false)
 	questionsAdult = get_tree().get_root().find_node("QuestionsAdult", true, false)
-	questionsChild = get_tree().get_root().find_node("QuestionsAdult", true, false)
+	questionsChild = get_tree().get_root().find_node("QuestionsChild", true, false)
 	$Interface.visible = false
 	$Interface/Left.disabled = true
 	$Interface/Right.disabled = true
