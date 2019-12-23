@@ -32,6 +32,7 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
+	$BlackBorders.visible = true
 	$Intro.frame = 0
 	$Intro.visible = true
 	$Intro.play()
