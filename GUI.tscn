@@ -341,9 +341,7 @@ __meta__ = {
 }
 
 [node name="Paper2" type="Sprite" parent="Interface"]
-position = Vector2( 959.499, 1581.05 )
-rotation = 4.71239
-scale = Vector2( 1.63667, 1.64239 )
+position = Vector2( 965.651, 1044.05 )
 texture = ExtResource( 9 )
 
 [node name="SpriteButtonLeft" type="Sprite" parent="Interface"]
@@ -354,7 +352,7 @@ texture = ExtResource( 10 )
 position = Vector2( 1855.96, 1016 )
 frames = SubResource( 6 )
 animation = "blink"
-frame = 29
+frame = 16
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -477,10 +475,10 @@ __meta__ = {
 }
 
 [node name="BackgroundRings" type="ColorRect" parent="."]
-margin_left = 637.374
-margin_top = -10.274
-margin_right = 1761.37
-margin_bottom = 163.726
+margin_left = 637.0
+margin_top = -10.0
+margin_right = 1761.0
+margin_bottom = 163.0
 color = Color( 0.509804, 0, 1, 0.196078 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -491,7 +489,7 @@ visible = false
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 3 )
-frame = 14
+frame = 8
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -500,8 +498,9 @@ scale = Vector2( 0.969083, 0.969083 )
 texture = ExtResource( 42 )
 
 [node name="BackgroundTitle" type="Sprite" parent="."]
-position = Vector2( 315.011, -264.592 )
-scale = Vector2( 0.836133, 0.836133 )
+position = Vector2( -196.895, 74.7918 )
+rotation = 3.14159
+scale = Vector2( 0.962559, 0.962559 )
 texture = ExtResource( 9 )
 
 [node name="Exit" type="Button" parent="."]
@@ -528,46 +527,51 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GiveAnswer" type="LineEdit" parent="."]
+[node name="Answering" type="Control" parent="."]
 visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GiveAnswer" type="LineEdit" parent="Answering"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -250.0
-margin_top = -238.0
-margin_right = 250.0
-margin_bottom = -87.0
+margin_left = 690.0
+margin_top = 282.0
+margin_right = 1190.0
+margin_bottom = 433.0
 caret_blink = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ValidAnswer" type="Button" parent="."]
-visible = false
+[node name="ValidAnswer" type="Button" parent="Answering"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 240.0
-margin_top = -273.0
-margin_right = 380.0
-margin_bottom = -53.0
+margin_left = 1180.0
+margin_top = 247.0
+margin_right = 1320.0
+margin_bottom = 467.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
 flat = true
 
-[node name="ClearAnswer" type="Button" parent="."]
-visible = false
+[node name="ClearAnswer" type="Button" parent="Answering"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -500.0
-margin_top = -272.987
-margin_right = -250.0
-margin_bottom = -52.9871
+margin_left = 440.0
+margin_top = 247.013
+margin_right = 690.0
+margin_bottom = 467.013
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Effacer"
@@ -576,7 +580,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CheckAnswer" type="Button" parent="."]
+[node name="CheckAnswerDisplay" type="Control" parent="."]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -586,25 +590,34 @@ margin_left = -550.0
 margin_top = -285.0
 margin_right = 550.0
 margin_bottom = -33.0
-focus_mode = 0
-enabled_focus_mode = 0
+
+[node name="ColorRect" type="ColorRect" parent="CheckAnswerDisplay"]
+margin_right = 1101.0
+margin_bottom = 253.0
+color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="CheckAnswer"]
-position = Vector2( 549.576, 125.39 )
-rotation = 4.71239
-scale = Vector2( 0.330281, 1.07782 )
-texture = ExtResource( 9 )
-
-[node name="CheckAnswerText" type="Label" parent="CheckAnswer"]
+[node name="CheckAnswerText" type="Label" parent="CheckAnswerDisplay"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_bottom = 1.0
 text = "Mauvaise réponse !"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckAnswer" type="Button" parent="."]
+visible = false
+margin_top = 170.0
+margin_right = 1929.0
+margin_bottom = 860.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -715,11 +728,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="Credit"]
-position = Vector2( 928.031, 535.167 )
-rotation = -1.5708
-scale = Vector2( 0.583414, 0.655875 )
-texture = ExtResource( 9 )
+[node name="ColorRect" type="ColorRect" parent="Credit"]
+margin_left = 619.0
+margin_top = 332.0
+margin_right = 1207.0
+margin_bottom = 659.0
+color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="Credit"]
 margin_left = 633.0
@@ -755,49 +772,49 @@ __meta__ = {
 position = Vector2( 734.675, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 884.675, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1034.67, 60.0063 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1184.67, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1334.67, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1484.67, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1634.67, 61.3667 )
 frames = SubResource( 4 )
 animation = "empty"
-frame = 22
+frame = 35
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -868,8 +885,8 @@ pitch_scale = 0.75
 [connection signal="pressed" from="Interface/Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="CloseQuestion" to="." method="_on_CloseQuestion_pressed"]
-[connection signal="pressed" from="ValidAnswer" to="." method="_on_ValidAnswer_pressed"]
-[connection signal="pressed" from="ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
+[connection signal="pressed" from="Answering/ValidAnswer" to="." method="_on_ValidAnswer_pressed"]
+[connection signal="pressed" from="Answering/ClearAnswer" to="." method="_on_ClearAnswer_pressed"]
 [connection signal="pressed" from="CheckAnswer" to="." method="_on_CheckAnswer_pressed"]
 [connection signal="pressed" from="CreditButton" to="." method="_on_CreditButton_pressed"]
 [connection signal="pressed" from="DisableInterface" to="." method="_on_DisableInterface_pressed"]

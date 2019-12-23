@@ -196,57 +196,53 @@ func _on_IndiceArea_pressed():
 
 func _on_Answer_pressed(): #adjust visibility
 	$ButtonPressedSound.play()
-	$GiveAnswer.text = ""
+	$Answering/GiveAnswer.text = ""
 	
 	if toggle_answer == false:		
 		$Interface/Instruction.disabled = true
 		$Interface/Left.disabled = true
 		$Interface/Right.disabled = true
-		$GiveAnswer.visible = true
+		$Answering.visible = true
 		$CloseQuestion.visible = true
-		$ValidAnswer.visible = true
-		$ClearAnswer.visible = true
 		toggle_answer = true
 	else:
 		$Interface/Instruction.disabled = false
 		$Interface/Left.disabled = false
 		$Interface/Right.disabled = false
-		$GiveAnswer.visible = false
+		$Answering.visible = false
 		$CloseQuestion.visible = false
-		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
-		$ClearAnswer.visible = false
 		toggle_answer = false
 
 func _on_ValidAnswer_pressed():
 	$ButtonPressedSound.play()
 	$CheckAnswer.visible = true
-	if $GiveAnswer.text == answers[message] and message == lock:
+	$CheckAnswerDisplay.visible = true
+	if $Answering/GiveAnswer.text == answers[message] and message == lock:
 		$CorrectSound.play()
-		$CheckAnswer/CheckAnswerText.text = "Bonne réponse !"
+		$CheckAnswerDisplay/CheckAnswerText.text = "Bonne réponse !"
 		lock += 1
 	else:
-		$CheckAnswer/CheckAnswerText.text = "Mauvaise réponse !"
+		$CheckAnswerDisplay/CheckAnswerText.text = "Mauvaise réponse !"
 	
 func _on_CheckAnswer_pressed():
 	$ButtonPressedSound.play()
+	$Answering.visible = false
+	$CheckAnswerDisplay.visible = false
 	if toggle_answer == true:
 		$Interface/Instruction.disabled = false
 		$Interface/Left.disabled = false
 		$Interface/Right.disabled = false
-		$GiveAnswer.visible = false
-		$ValidAnswer.visible = false
 		$CheckAnswer.visible = false
-		$ClearAnswer.visible = false
 		$CloseQuestion.visible = false		
 		$Interface/Answer.pressed = false
 		toggle_answer = false
 
-	$GiveAnswer.text = ""
+	$Answering/GiveAnswer.text = ""
 
 func _on_ClearAnswer_pressed():
 	$ButtonPressedSound.play()
-	$GiveAnswer.text = ""
+	$Answering/GiveAnswer.text = ""
 
 func _on_CheckBox_pressed():
 	if musicOn == true:
