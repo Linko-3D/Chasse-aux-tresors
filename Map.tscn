@@ -1508,6 +1508,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35696, 2.3, -42.9884 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0111, 2.3, -23.8055 )
 
 [node name="QuestionsChild" type="Spatial" parent="."]
+visible = false
 
 [node name="QuestionMark" parent="QuestionsChild" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.211, 2.3, 39.005 )
