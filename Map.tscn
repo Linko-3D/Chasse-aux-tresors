@@ -1532,9 +1532,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8165, 2.3, -33.6512 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0393, 2.3, -23.8995 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.118959, 0, -0.992899, 0, 1, 0, 0.992899, 0, -0.118959, -17.0153, 2.3, -40.9726 )
+transform = Transform( 0.997342, 0, 0.0728552, 0, 1, 0, -0.0728552, 0, 0.997342, 2.80636, 2.3, 39.0506 )
 current = true
-fov = 140.0
+fov = 80.0
 
 [node name="Game" parent="Camera" instance=ExtResource( 35 )]
 

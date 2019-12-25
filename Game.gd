@@ -95,8 +95,12 @@ func _process(delta):
 	# Animations
 	
 	if wasPlayed == false:
+		if message == 6:
+			$CameraAnimation.play("1")
+			wasPlayed = true
 		if easy:
 			if message == 7:
+				camera.fov = 80
 				$CameraAnimation.play("child 2")
 				wasPlayed = true
 			if message == 8:
