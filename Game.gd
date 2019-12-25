@@ -174,6 +174,7 @@ func _on_Right_pressed():
 
 func _on_Left_pressed():
 	$ButtonPressedSound.play()
+	wasPlayed = false
 	if message > 1:
 		message -= 1
 		$Interface/Right.disabled = false
