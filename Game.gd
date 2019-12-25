@@ -6,6 +6,7 @@ var questionsChild
 var questionsAdult
 
 var frame
+var displayCredit = true
 
 var message = 1
 var lock = 6
@@ -53,6 +54,9 @@ func _process(delta):
 	
 	if message == 13:
 		$FinalRing.visible = true
+		if displayCredit:
+			_on_CreditButton_pressed()
+			displayCredit = false
 	else:
 		$FinalRing.visible = false
 	
@@ -86,7 +90,7 @@ func _process(delta):
 		$Rings/Ring7.frame = frame
 	
 	if $CameraAnimation.is_playing() == false:
-		camera.rotate_y(0.5*delta)
+		camera.rotate_y(0.2*delta)
 	
 	# Animations
 	
