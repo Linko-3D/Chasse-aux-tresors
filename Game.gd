@@ -45,7 +45,6 @@ func _ready():
 	$Interface/Right.disabled = true
 
 func _process(delta):
-	
 	if $Interface/Right.disabled:
 		$Interface/SpriteButtonRight.play("default")
 	else:
