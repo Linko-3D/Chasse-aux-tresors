@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0042.png-15cff7cb2f148e4b3fb16694397d026f.stex"
+path="res://.import/ring empty.png-e332c1a0f430d41c84c078e4aa3eea5e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/RingEmpty/0042.png"
-dest_files=[ "res://.import/0042.png-15cff7cb2f148e4b3fb16694397d026f.stex" ]
+source_file="res://Sprites/ring empty.png"
+dest_files=[ "res://.import/ring empty.png-e332c1a0f430d41c84c078e4aa3eea5e.stex" ]
 
 [params]
 
