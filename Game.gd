@@ -45,6 +45,16 @@ func _ready():
 	$Interface/Right.disabled = true
 
 func _process(delta):
+	if Input.is_action_just_pressed("ui_accept"):
+		if $CheckAnswer.visible:
+			_on_CheckAnswer_pressed()
+		if $Answering.visible:
+			_on_ValidAnswer_pressed()
+	
+	if Input.is_action_just_pressed("ui_cancel"):
+		pass
+	
+	
 	if $Interface/Right.disabled:
 		$Interface/SpriteButtonRight.play("default")
 	else:
@@ -153,9 +163,6 @@ func _process(delta):
 		$Interface/Answer.visible = true
 	else:
 		$Interface/Answer.visible = false
-	
-	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().quit()
 	
 	if message == lock:
 		$Interface/Right.disabled = true
