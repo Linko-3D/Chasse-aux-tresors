@@ -71,7 +71,7 @@ func _process(delta):
 		$Interface/SpriteButtonRight.play("blink")
 		
 	
-	if message == 13:
+	if message == 12:
 		$FinalRing.visible = true
 		if displayCredit:
 			_on_CreditButton_pressed()
