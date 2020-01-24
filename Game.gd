@@ -52,8 +52,14 @@ func _process(delta):
 			_on_ValidAnswer_pressed()
 	
 	if Input.is_action_just_pressed("ui_cancel"):
-		pass
+		if $CheckAnswer.visible:
+			_on_CheckAnswer_pressed()
+		if $Answering.visible:
+			_on_Answer_pressed()
 	
+	if Input.is_action_just_pressed("ui_right"):
+		#_on_Right_pressed()
+		pass
 	
 	if $Interface/Right.disabled:
 		$Interface/SpriteButtonRight.play("default")
