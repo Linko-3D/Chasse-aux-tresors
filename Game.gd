@@ -9,22 +9,22 @@ var frame
 var displayCredit = true
 
 var message = 1
-var lock = 6
+var lock = 5
 var questionStart = lock
 var toggle_instruction = false
 var toggle_answer = false
 
 var wasPlayed = false
 var musicOn = true
-var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Donnez les réponses sans majuscules.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7", "Vous pouvez récupérer l'anneau !"]
+var instruction = ["", "Appuyez ici pour afficher l'énigme.", "Bienvenue au jeu de la chasse aux trésors spécial Tolkien !", "Des anneaux ont été cachés, pour les retrouver [...]", "[...] des énigmes et indices vont vous être posés.", "Enigme 1", "Enigme 2", "Enigme 3", "Enigme 4", "Enigme 5", "Enigme 6", "Enigme 7", "Vous pouvez récupérer l'anneau !"]
 
-var easyQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affichée la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?", "Je suis vieux et sage\nJe ne fais pas mon âge\nAux autres races je fais mes adieux\nEt m’en vais quitter la Terre du Milieu\n\nQui-suis-je ?", "Mon premier est précieux\nTu poses des questions avec mon second\nMon tout est le nom d’un animal\nMais aussi d’une créature du mal\n\nQui suis-je ?", "Tu dors dans mon premier\nMon second retient les portes\nMon tout crache du feu\n\nQui suis-je ?", "D’or et tout rond\nDe Sauron je porte\nLa malédiction\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
-var hardQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affichée la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?", "En ma demeure d’Erebor\nJe veille sur mon or\nL’oiseau frappeur j’attends\nQui réveillera mon feu ardent", "Sombre est mon col\nDe Cirith Ungol\nOù je fus pourfendue\nPar un hobbit résolu", "Des entrailles de la terre\nAux sommets du monde\nUn magicien m’affrontant\nDe gris devint blanc\n\nQui suis-je ?", "Du fond des eaux Il vint\nEt je fus maudit\nSurgit le Destin\nEt par le feu je péris\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
+var easyQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affichée la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "J’ai les pieds poilus\nLes oreilles pointues\nJe ne suis pas grand\nMais je mange comme un géant\n\nQui suis-je ?", "Avec mon chapeau pointu\nEt de mon bâton de mage\nJe dévoile les âmes corrompues\nEt je commande aux orages\n\nQui suis-je ?", "Je suis petit\nJe suis barbu\nJe forge le métal\nA corps perdu\n\nQui suis-je ?", "Je suis vieux et sage\nJe ne fais pas mon âge\nAux autres races je fais mes adieux\nEt m’en vais quitter la Terre du Milieu\n\nQui-suis-je ?", "Mon premier est précieux\nTu poses des questions avec mon second\nMon tout est le nom d’un animal\nMais aussi d’une créature du mal\n\nQui suis-je ?", "Tu dors dans mon premier\nMon second retient les portes\nMon tout crache du feu\n\nQui suis-je ?", "D’or et tout rond\nDe Sauron je porte\nLa malédiction\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
+var hardQuestions = ["", "Ici sera affiché l'énigme.\nA droite vous est affichée la carte de la médiathèque.\nElle indique où vous rendre pour trouver les indices.\nMaintenez le doigt enfoncé pour la déplacer.\n\nAppuyez en bas pour fermer cette fenêtre, puis flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Aucune enigme pour le moment, appuyez sur la flèche de droite.", "Dame de Lorién\nAux cheveux d’or et d’argent\nJe siège parmi les sages\nAu Conseil Blanc\n\nQui suis-je ?", "Aux portes de la Moria\nSans moi tu n’entreras point\nMalin qui me trouvera\nEt parlera Ancien\n\n\nQui suis-je ?", "Rôdeur du Nord\nJe commanderai les Morts\nRefleurira l’arbre blanc\nDu Gondor\n\n\nQui suis-je ?", "En ma demeure d’Erebor\nJe veille sur mon or\nL’oiseau frappeur j’attends\nQui réveillera mon feu ardent", "Sombre est mon col\nDe Cirith Ungol\nOù je fus pourfendue\nPar un hobbit résolu", "Des entrailles de la terre\nAux sommets du monde\nUn magicien m’affrontant\nDe gris devint blanc\n\nQui suis-je ?", "Du fond des eaux Il vint\nEt je fus maudit\nSurgit le Destin\nEt par le feu je péris\n\nQui suis-je ?", "Vous êtes le nouveau Seigneur des anneaux !\n\nVous pouvez recommencer pour changer de niveau de difficulté."]
 
 var question = easyQuestions
 
-var easyAnswers = ["", "", "", "", "", "", "hobbit", "gandalf", "nain", "elfe", "orque", "dragon", "anneau"]
-var hardAnswers = ["", "", "", "", "", "", "galadriel", "meldo", "aragorn", "smaug", "arachne", "balrog", "gollum"]
+var easyAnswers = ["", "", "", "", "", "hobbit", "gandalf", "nain", "elfe", "orque", "dragon", "anneau"]
+var hardAnswers = ["", "", "", "", "", "galadriel", "meldo", "aragorn", "smaug", "arachne", "balrog", "gollum"]
 
 var answers = easyAnswers
 
@@ -33,8 +33,6 @@ var easy = true
 var maxmessage = instruction.size()
 
 func _ready():
-	
-	
 	$BlackBorders.visible = true
 	$Intro.frame = 0
 	$Intro.visible = true
@@ -61,31 +59,31 @@ func _process(delta):
 	else:
 		$FinalRing.visible = false
 	
-	if lock > 6:
+	if lock > 5:
 		frame = $Rings/Ring1.frame
 		$Rings/Ring1.play("metal")
 		$Rings/Ring1.frame = frame
-	if lock > 7:
+	if lock > 6:
 		frame = $Rings/Ring2.frame
 		$Rings/Ring2.play("metal")
 		$Rings/Ring2.frame = frame
-	if lock > 8:
+	if lock > 7:
 		frame = $Rings/Ring3.frame
 		$Rings/Ring3.play("metal")
 		$Rings/Ring3.frame = frame
-	if lock > 9:
+	if lock > 8:
 		frame = $Rings/Ring4.frame
 		$Rings/Ring4.play("metal")
 		$Rings/Ring4.frame = frame
-	if lock > 10:
+	if lock > 9:
 		frame = $Rings/Ring5.frame
 		$Rings/Ring5.play("metal")
 		$Rings/Ring5.frame = frame
-	if lock > 11:
+	if lock > 10:
 		frame = $Rings/Ring6.frame
 		$Rings/Ring6.play("metal")
 		$Rings/Ring6.frame = frame
-	if lock > 12:
+	if lock > 11:
 		frame = $Rings/Ring7.frame
 		$Rings/Ring7.play("metal")
 		$Rings/Ring7.frame = frame
@@ -96,52 +94,52 @@ func _process(delta):
 	# Animations
 	
 	if wasPlayed == false:
-		if message == 6:
+		if message == 5:
 			$CameraAnimation.play("1")
 			wasPlayed = true
 		if easy:
-			if message == 7:
+			if message == 6:
 				camera.fov = 80
 				$CameraAnimation.play("child 2")
 				wasPlayed = true
-			if message == 8:
+			if message == 7:
 				$CameraAnimation.play("child 3")
 				wasPlayed = true
-			if message == 9:
+			if message == 8:
 				$CameraAnimation.play("child 4")
 				wasPlayed = true
-			if message == 10:
+			if message == 9:
 				$CameraAnimation.play("child 5")
 				wasPlayed = true
-			if message == 11:
+			if message == 10:
 				$CameraAnimation.play("child 6")
 				wasPlayed = true
-			if message == 12:
+			if message == 11:
 				$CameraAnimation.play("child 7")
 				wasPlayed = true
-			if message == 13:
+			if message == 12:
 				$CameraAnimation.play("victory")
 				wasPlayed = true
 		else:
-			if message == 7:
+			if message == 6:
 				$CameraAnimation.play("adult 2")
 				wasPlayed = true
-			if message == 8:
+			if message == 7:
 				$CameraAnimation.play("adult 3")
 				wasPlayed = true
-			if message == 9:
+			if message == 8:
 				$CameraAnimation.play("adult 4")
 				wasPlayed = true
-			if message == 10:
+			if message == 9:
 				$CameraAnimation.play("adult 5")
 				wasPlayed = true
-			if message == 11:
+			if message == 10:
 				$CameraAnimation.play("adult 6")
 				wasPlayed = true
-			if message == 12:
+			if message == 11:
 				$CameraAnimation.play("adult 7")
 				wasPlayed = true
-			if message == 13:
+			if message == 12:
 				$CameraAnimation.play("victory")
 				wasPlayed = true
 	
@@ -208,7 +206,7 @@ func _on_Answer_pressed(): #adjust visibility
 	$ButtonPressedSound.play()
 	$Answering/GiveAnswer.text = ""
 	
-	if toggle_answer == false:		
+	if toggle_answer == false:
 		$Interface/Instruction.disabled = true
 		$Interface/Left.disabled = true
 		$Interface/Right.disabled = true
@@ -228,7 +226,7 @@ func _on_ValidAnswer_pressed():
 	$ButtonPressedSound.play()
 	$CheckAnswer.visible = true
 	$CheckAnswerDisplay.visible = true
-	if $Answering/GiveAnswer.text == answers[message] and message == lock:
+	if $Answering/GiveAnswer.text.to_lower() == answers[message] and message == lock:
 		$CorrectSound.play()
 		$CheckAnswerDisplay/CheckAnswerText.text = "Bonne réponse !"
 		lock += 1
