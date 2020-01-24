@@ -58,8 +58,12 @@ func _process(delta):
 			_on_Answer_pressed()
 	
 	if Input.is_action_just_pressed("ui_right"):
-		#_on_Right_pressed()
-		pass
+		if message < lock and $Interface/Right.disabled == false:
+			_on_Right_pressed()
+	
+	if Input.is_action_just_pressed("ui_left"):
+		if message > 1:
+			_on_Left_pressed()
 	
 	if $Interface/Right.disabled:
 		$Interface/SpriteButtonRight.play("default")

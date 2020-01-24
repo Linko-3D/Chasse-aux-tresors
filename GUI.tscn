@@ -1227,7 +1227,7 @@ texture = ExtResource( 11 )
 position = Vector2( 1855.96, 1016 )
 frames = SubResource( 34 )
 animation = "blink"
-frame = 15
+frame = 18
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1363,7 +1363,7 @@ __meta__ = {
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 35 )
-frame = 51
+frame = 22
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1646,49 +1646,49 @@ __meta__ = {
 position = Vector2( 734.675, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 884.675, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1034.67, 60.0063 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1184.67, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1334.67, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 52
+frame = 55
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1484.67, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
 position = Vector2( 1634.67, 61.3667 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 51
+frame = 54
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
