@@ -1526,7 +1526,7 @@ position = Vector2( 1232.4, 672 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 33 )
 animation = "blink"
-frame = 14
+frame = 18
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1666,7 +1666,7 @@ visible = false
 position = Vector2( 640, 360 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 94 )
-frame = 34
+frame = 38
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1950,7 +1950,7 @@ position = Vector2( 439.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -1958,7 +1958,7 @@ position = Vector2( 549.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -1966,7 +1966,7 @@ position = Vector2( 659.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -1974,7 +1974,7 @@ position = Vector2( 769.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -1982,7 +1982,7 @@ position = Vector2( 879.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -1990,7 +1990,7 @@ position = Vector2( 989.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 1
+frame = 5
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -1998,6 +1998,7 @@ position = Vector2( 1099.04, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
+frame = 4
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -2021,6 +2022,7 @@ animation = "New Anim"
 centered = false
 
 [node name="BlackBorders" type="Control" parent="."]
+visible = false
 margin_top = 950.0
 margin_right = 40.0
 margin_bottom = 990.0

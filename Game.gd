@@ -46,11 +46,14 @@ func _ready():
 	$Interface/Right.disabled = true
 
 func _process(delta):
+	print($Interface/Answer.visible)
 	if Input.is_action_just_pressed("ui_accept"):
 		if $CheckAnswer.visible:
 			_on_CheckAnswer_pressed()
 		if $Answering.visible:
 			_on_ValidAnswer_pressed()
+		if $Interface/Answer.visible == true and $Interface/Answer.disabled == false and $CheckAnswer.visible == false:
+			_on_Answer_pressed()
 	
 	if Input.is_action_just_pressed("ui_cancel"):
 		if $CheckAnswer.visible:
@@ -224,7 +227,7 @@ func _on_Answer_pressed(): #adjust visibility
 	$ButtonPressedSound.play()
 	$Answering/GiveAnswer.text = ""
 	
-	if toggle_answer == false:
+	if $Answering.visible == false:
 		$Interface/Instruction.disabled = true
 		$Interface/Left.disabled = true
 		$Interface/Right.disabled = true
@@ -247,13 +250,15 @@ func _on_ValidAnswer_pressed():
 	if $Answering/GiveAnswer.text.to_lower() == answers[message] and message == lock:
 		$CorrectSound.play()
 		$CheckAnswerDisplay/CheckAnswerText.text = "Bonne réponse !"
+		$Answering.visible = false
 		lock += 1
 	else:
 		$CheckAnswerDisplay/CheckAnswerText.text = "Mauvaise réponse !"
+		$Answering.visible = false
 	
 func _on_CheckAnswer_pressed():
 	$ButtonPressedSound.play()
-	$Answering.visible = false
+	
 	$CheckAnswerDisplay.visible = false
 	if toggle_answer == true:
 		$Interface/Instruction.disabled = false
