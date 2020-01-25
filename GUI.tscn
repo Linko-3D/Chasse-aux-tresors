@@ -1,4 +1,4 @@
-[gd_scene load_steps=238 format=2]
+[gd_scene load_steps=237 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -29,169 +29,164 @@ font_data = ExtResource( 1 )
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=279]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 0, 128, 128 )
+region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=280]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 0, 128, 128 )
+region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=281]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 128, 0, 128, 128 )
+region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=282]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 256, 0, 128, 128 )
+region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=283]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 384, 0, 128, 128 )
+region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=284]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 512, 0, 128, 128 )
+region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=285]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 640, 0, 128, 128 )
+region = Rect2( 0, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=286]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 128, 128, 128 )
+region = Rect2( 64, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=287]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 128, 128, 128, 128 )
+region = Rect2( 128, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=288]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 256, 128, 128, 128 )
+region = Rect2( 192, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=289]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 384, 128, 128, 128 )
+region = Rect2( 256, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=290]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 512, 128, 128, 128 )
+region = Rect2( 320, 64, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=291]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 640, 128, 128, 128 )
+region = Rect2( 0, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=292]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 256, 128, 128 )
+region = Rect2( 64, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=293]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 128, 256, 128, 128 )
+region = Rect2( 128, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=294]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 256, 256, 128, 128 )
+region = Rect2( 192, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=295]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 384, 256, 128, 128 )
+region = Rect2( 256, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=296]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 512, 256, 128, 128 )
+region = Rect2( 320, 128, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=297]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 640, 256, 128, 128 )
+region = Rect2( 0, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=298]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 384, 128, 128 )
+region = Rect2( 64, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=299]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 128, 384, 128, 128 )
+region = Rect2( 128, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=300]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 256, 384, 128, 128 )
+region = Rect2( 192, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=301]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 384, 384, 128, 128 )
+region = Rect2( 256, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=302]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 512, 384, 128, 128 )
+region = Rect2( 320, 192, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=303]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 640, 384, 128, 128 )
+region = Rect2( 0, 256, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=304]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 0, 512, 128, 128 )
+region = Rect2( 64, 256, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=305]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 128, 512, 128, 128 )
+region = Rect2( 128, 256, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=306]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 256, 512, 128, 128 )
+region = Rect2( 192, 256, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=307]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 384, 512, 128, 128 )
+region = Rect2( 256, 256, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=32]
+[sub_resource type="AtlasTexture" id=308]
 flags = 4
 atlas = ExtResource( 12 )
-region = Rect2( 512, 512, 128, 128 )
-
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 12 )
-region = Rect2( 640, 512, 128, 128 )
+region = Rect2( 320, 256, 64, 64 )
 
 [sub_resource type="SpriteFrames" id=34]
 animations = [ {
-"frames": [ SubResource( 3 ) ],
+"frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ) ],
+"frames": [ SubResource( 279 ), SubResource( 280 ), SubResource( 281 ), SubResource( 282 ), SubResource( 283 ), SubResource( 284 ), SubResource( 285 ), SubResource( 286 ), SubResource( 287 ), SubResource( 288 ), SubResource( 289 ), SubResource( 290 ), SubResource( 291 ), SubResource( 292 ), SubResource( 293 ), SubResource( 294 ), SubResource( 295 ), SubResource( 296 ), SubResource( 297 ), SubResource( 298 ), SubResource( 299 ), SubResource( 300 ), SubResource( 301 ), SubResource( 302 ), SubResource( 303 ), SubResource( 304 ), SubResource( 305 ), SubResource( 306 ), SubResource( 307 ), SubResource( 308 ) ],
 "loop": true,
 "name": "blink",
 "speed": 60.0
@@ -1141,13 +1136,13 @@ __meta__ = {
 
 [node name="MapRing" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.313726 )
-position = Vector2( 149.881, 582.34 )
+position = Vector2( 157.779, 540 )
 rotation = 0.13439
 texture = ExtResource( 3 )
 
 [node name="Telescope" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.313726 )
-position = Vector2( 147.017, 510.013 )
+position = Vector2( 120, 513.511 )
 texture = ExtResource( 4 )
 
 [node name="Compass" type="Sprite" parent="."]
@@ -1159,7 +1154,7 @@ texture = ExtResource( 5 )
 [node name="Vignette" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.392157 )
 position = Vector2( 0, 110 )
-scale = Vector2( 1.5954, 0.883318 )
+scale = Vector2( 1.60031, 0.883318 )
 texture = ExtResource( 6 )
 centered = false
 
@@ -1222,19 +1217,21 @@ __meta__ = {
 }
 
 [node name="Paper2" type="Sprite" parent="Interface"]
-position = Vector2( 0, 592.192 )
+position = Vector2( 0, 624.113 )
 texture = ExtResource( 10 )
 centered = false
 
 [node name="SpriteButtonLeft" type="Sprite" parent="Interface"]
-position = Vector2( 63.866, 656 )
+position = Vector2( 48.124, 672 )
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 11 )
 
 [node name="SpriteButtonRight" type="AnimatedSprite" parent="Interface"]
-position = Vector2( 1216.19, 656 )
+position = Vector2( 1232.4, 672 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 34 )
 animation = "blink"
-frame = 4
+frame = 6
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1243,8 +1240,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -149.0
-margin_top = -100.0
+margin_top = -70.0
 margin_right = 158.0
+margin_bottom = 33.0
 focus_mode = 0
 toggle_mode = true
 enabled_focus_mode = 0
@@ -1260,7 +1258,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -1098.0
-margin_top = 2.0
+margin_top = 33.0
 margin_right = 1102.0
 margin_bottom = 129.0
 focus_mode = 0
@@ -1275,8 +1273,8 @@ __meta__ = {
 [node name="Left" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = 1.0
-margin_right = 128.0
+margin_top = 32.0
+margin_right = 97.0
 margin_bottom = 129.0
 focus_mode = 0
 enabled_focus_mode = 0
@@ -1291,8 +1289,8 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -128.0
-margin_top = 2.0
+margin_left = -96.0
+margin_top = 33.0
 margin_bottom = 129.0
 focus_mode = 0
 enabled_focus_mode = 0
@@ -1346,9 +1344,10 @@ __meta__ = {
 [node name="Restart" type="Button" parent="Interface"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 7.0
-margin_top = -100.0
-margin_right = 304.0
+margin_left = -1.0
+margin_top = -70.0
+margin_right = 296.0
+margin_bottom = 33.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Recommencer"
@@ -1371,7 +1370,7 @@ __meta__ = {
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 35 )
-frame = 37
+frame = 34
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1655,7 +1654,7 @@ position = Vector2( 446, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 8
+frame = 25
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -1663,7 +1662,7 @@ position = Vector2( 556, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 8
+frame = 25
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -1671,7 +1670,7 @@ position = Vector2( 666, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 8
+frame = 25
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -1679,7 +1678,7 @@ position = Vector2( 776, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 7
+frame = 24
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -1687,7 +1686,7 @@ position = Vector2( 886, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 7
+frame = 24
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -1695,7 +1694,7 @@ position = Vector2( 996, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 6
+frame = 23
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -1703,7 +1702,7 @@ position = Vector2( 1106, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 6
+frame = 23
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
