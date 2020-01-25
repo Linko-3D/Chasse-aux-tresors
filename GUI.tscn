@@ -1231,7 +1231,7 @@ position = Vector2( 1232.4, 672 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 34 )
 animation = "blink"
-frame = 6
+frame = 20
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1309,20 +1309,20 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Interface/IndiceArea"]
-margin_left = 250.0
+margin_left = 230.0
 margin_top = 250.0
-margin_right = 1670.0
-margin_bottom = 810.0
+margin_right = 1050.0
+margin_bottom = 480.0
 color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Text" type="Label" parent="Interface/IndiceArea"]
-margin_left = 260.0
+margin_left = 240.0
 margin_top = 260.0
-margin_right = 1660.0
-margin_bottom = 800.0
+margin_right = 1040.0
+margin_bottom = 470.0
 rect_pivot_offset = Vector2( -1.17938, 13.8677 )
 text = "Aucun indice disponible"
 __meta__ = {
@@ -1370,7 +1370,7 @@ __meta__ = {
 position = Vector2( 960, 620 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 35 )
-frame = 34
+frame = 24
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1409,8 +1409,8 @@ __meta__ = {
 
 [node name="Answering" type="Control" parent="."]
 visible = false
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1420,10 +1420,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 690.0
-margin_top = 282.0
-margin_right = 1190.0
-margin_bottom = 433.0
+margin_left = -146.734
+margin_top = -86.3698
+margin_right = 190.266
+margin_bottom = 15.6302
 caret_blink = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1434,10 +1434,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 1180.0
-margin_top = 247.0
-margin_right = 1320.0
-margin_bottom = 467.0
+margin_left = 191.766
+margin_top = -112.591
+margin_right = 287.766
+margin_bottom = 38.4092
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
@@ -1448,10 +1448,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 440.0
-margin_top = 247.013
-margin_right = 690.0
-margin_bottom = 467.013
+margin_left = -282.234
+margin_top = -112.37
+margin_right = -145.234
+margin_bottom = 30.6302
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Effacer"
@@ -1462,18 +1462,17 @@ __meta__ = {
 
 [node name="CheckAnswerDisplay" type="Control" parent="."]
 visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -550.0
-margin_top = -285.0
-margin_right = 550.0
-margin_bottom = -33.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="CheckAnswerDisplay"]
-margin_right = 1101.0
-margin_bottom = 253.0
+margin_left = 400.0
+margin_top = 207.0
+margin_right = 880.0
+margin_bottom = 404.0
 color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1482,7 +1481,8 @@ __meta__ = {
 [node name="CheckAnswerText" type="Label" parent="CheckAnswerDisplay"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_bottom = 1.0
+margin_top = 209.0
+margin_bottom = -315.0
 text = "Mauvaise réponse !"
 align = 1
 valign = 1
@@ -1603,27 +1603,27 @@ __meta__ = {
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -1920.0
-margin_bottom = -1080.0
+margin_right = -1280.0
+margin_bottom = -720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ColorRect" type="ColorRect" parent="Credit"]
-margin_left = 619.0
-margin_top = 332.0
-margin_right = 1207.0
-margin_bottom = 659.0
+margin_left = 380.0
+margin_top = 200.0
+margin_right = 900.0
+margin_bottom = 450.0
 color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Credit"]
-margin_left = 633.0
-margin_top = 342.0
-margin_right = 1394.0
-margin_bottom = 781.0
+margin_left = 390.0
+margin_top = 210.0
+margin_right = 890.0
+margin_bottom = 440.0
 text = "Conception:
 Bekhoucha Danyl
 
@@ -1635,8 +1635,8 @@ __meta__ = {
 }
 
 [node name="HideCredit" type="Button" parent="Credit"]
-margin_right = 1943.0
-margin_bottom = 1099.0
+margin_right = 1307.0
+margin_bottom = 743.0
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1654,7 +1654,7 @@ position = Vector2( 446, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 25
+frame = 9
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -1662,7 +1662,7 @@ position = Vector2( 556, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 25
+frame = 9
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -1670,7 +1670,7 @@ position = Vector2( 666, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 25
+frame = 9
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -1678,7 +1678,7 @@ position = Vector2( 776, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 24
+frame = 8
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -1686,7 +1686,7 @@ position = Vector2( 886, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 24
+frame = 8
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -1694,7 +1694,7 @@ position = Vector2( 996, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 23
+frame = 7
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -1702,7 +1702,7 @@ position = Vector2( 1106, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 23
+frame = 7
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -1764,9 +1764,9 @@ volume_db = -8.0
 pitch_scale = 0.75
 
 [node name="Framerate" type="Label" parent="."]
-margin_top = 169.0
+margin_top = 130.0
 margin_right = 234.0
-margin_bottom = 250.0
+margin_bottom = 58.0
 custom_fonts/font = SubResource( 218 )
 text = "60"
 script = ExtResource( 18 )
