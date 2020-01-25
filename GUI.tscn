@@ -1,4 +1,4 @@
-[gd_scene load_steps=237 format=2]
+[gd_scene load_steps=297 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -192,9 +192,309 @@ animations = [ {
 "speed": 60.0
 } ]
 
+[sub_resource type="AtlasTexture" id=309]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=310]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=311]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=312]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=313]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=314]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=315]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=316]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=317]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 0, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=318]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=319]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=320]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=321]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=322]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=323]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=324]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=325]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=326]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 55, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=327]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=328]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=329]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=330]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=331]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=332]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=333]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=334]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=335]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 110, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=336]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=337]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=338]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=339]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=340]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=341]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=342]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=343]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=344]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 165, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=345]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=346]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=347]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=348]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=349]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=350]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=351]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=352]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=353]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 220, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=354]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=355]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=356]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=357]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=358]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=359]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=360]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 330, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=361]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 385, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=362]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 440, 275, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=363]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 330, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=364]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 55, 330, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=365]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 110, 330, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=366]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 165, 330, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=367]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 220, 330, 55, 55 )
+
+[sub_resource type="AtlasTexture" id=368]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 275, 330, 55, 55 )
+
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
-"frames": [ null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ],
+"frames": [ SubResource( 309 ), SubResource( 310 ), SubResource( 311 ), SubResource( 312 ), SubResource( 313 ), SubResource( 314 ), SubResource( 315 ), SubResource( 316 ), SubResource( 317 ), SubResource( 318 ), SubResource( 319 ), SubResource( 320 ), SubResource( 321 ), SubResource( 322 ), SubResource( 323 ), SubResource( 324 ), SubResource( 325 ), SubResource( 326 ), SubResource( 327 ), SubResource( 328 ), SubResource( 329 ), SubResource( 330 ), SubResource( 331 ), SubResource( 332 ), SubResource( 333 ), SubResource( 334 ), SubResource( 335 ), SubResource( 336 ), SubResource( 337 ), SubResource( 338 ), SubResource( 339 ), SubResource( 340 ), SubResource( 341 ), SubResource( 342 ), SubResource( 343 ), SubResource( 344 ), SubResource( 345 ), SubResource( 346 ), SubResource( 347 ), SubResource( 348 ), SubResource( 349 ), SubResource( 350 ), SubResource( 351 ), SubResource( 352 ), SubResource( 353 ), SubResource( 354 ), SubResource( 355 ), SubResource( 356 ), SubResource( 357 ), SubResource( 358 ), SubResource( 359 ), SubResource( 360 ), SubResource( 361 ), SubResource( 362 ), SubResource( 363 ), SubResource( 364 ), SubResource( 365 ), SubResource( 366 ), SubResource( 367 ), SubResource( 368 ) ],
 "loop": true,
 "name": "default",
 "speed": 60.0
@@ -1231,7 +1531,7 @@ position = Vector2( 1232.4, 672 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 34 )
 animation = "blink"
-frame = 20
+frame = 14
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1360,22 +1660,23 @@ __meta__ = {
 margin_left = 379.0
 margin_top = -23.0
 margin_right = 1192.0
-margin_bottom = 109.0
+margin_bottom = 110.0
 color = Color( 0.509804, 0, 1, 0.196078 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FinalRing" type="AnimatedSprite" parent="."]
-position = Vector2( 960, 620 )
+visible = false
+position = Vector2( 640, 360 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 35 )
-frame = 24
+frame = 5
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
-position = Vector2( 1225.01, 54.7608 )
-scale = Vector2( 0.92354, 0.92354 )
+position = Vector2( 1224.88, 54.8914 )
+scale = Vector2( 0.925735, 0.925735 )
 texture = ExtResource( 13 )
 
 [node name="BackgroundTitle" type="Sprite" parent="."]
@@ -1654,7 +1955,7 @@ position = Vector2( 446, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 9
+frame = 33
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -1662,7 +1963,7 @@ position = Vector2( 556, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 9
+frame = 33
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -1670,7 +1971,7 @@ position = Vector2( 666, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 9
+frame = 33
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -1678,7 +1979,7 @@ position = Vector2( 776, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 8
+frame = 32
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -1686,7 +1987,7 @@ position = Vector2( 886, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 8
+frame = 32
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -1694,7 +1995,7 @@ position = Vector2( 996, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 7
+frame = 31
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -1702,7 +2003,7 @@ position = Vector2( 1106, 52.015 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 156 )
 animation = "empty"
-frame = 7
+frame = 31
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -1720,7 +2021,7 @@ __meta__ = {
 
 [node name="Intro" type="AnimatedSprite" parent="."]
 visible = false
-scale = Vector2( 10, 10 )
+scale = Vector2( 6.66794, 6.66794 )
 frames = SubResource( 217 )
 animation = "New Anim"
 centered = false
