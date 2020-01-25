@@ -1,4 +1,4 @@
-[gd_scene load_steps=297 format=2]
+[gd_scene load_steps=295 format=2]
 
 [ext_resource path="res://RINGM___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -18,7 +18,6 @@
 [ext_resource path="res://Sprites/introduction.png" type="Texture" id=16]
 [ext_resource path="res://Sounds/Press.wav" type="AudioStream" id=17]
 [ext_resource path="res://Sounds/Correct answer.wav" type="AudioStream" id=18]
-[ext_resource path="res://Framerate.gd" type="Script" id=19]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -1421,10 +1420,6 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[sub_resource type="DynamicFont" id=277]
-size = 60
-font_data = ExtResource( 1 )
-
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1531,7 +1526,7 @@ position = Vector2( 1232.4, 672 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 33 )
 animation = "blink"
-frame = 19
+frame = 14
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1671,7 +1666,7 @@ visible = false
 position = Vector2( 640, 360 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 94 )
-frame = 39
+frame = 34
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1710,8 +1705,6 @@ __meta__ = {
 
 [node name="Answering" type="Control" parent="."]
 visible = false
-margin_right = 1280.0
-margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1721,10 +1714,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -146.734
-margin_top = -155.185
-margin_right = 190.266
-margin_bottom = -53.1847
+margin_left = 487.478
+margin_top = 206.484
+margin_right = 824.478
+margin_bottom = 308.485
 caret_blink = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1735,10 +1728,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 191.766
-margin_top = -181.406
-margin_right = 287.766
-margin_bottom = -30.4057
+margin_left = 825.978
+margin_top = 180.263
+margin_right = 921.978
+margin_bottom = 331.264
 focus_mode = 0
 enabled_focus_mode = 0
 text = "OK"
@@ -1749,10 +1742,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -282.234
-margin_top = -181.185
-margin_right = -145.234
-margin_bottom = -38.1847
+margin_left = 351.978
+margin_top = 180.484
+margin_right = 488.978
+margin_bottom = 323.485
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Effacer"
@@ -1770,10 +1763,10 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="CheckAnswerDisplay"]
-margin_left = 400.0
-margin_top = 207.0
-margin_right = 880.0
-margin_bottom = 404.0
+margin_left = 340.0
+margin_top = 170.0
+margin_right = 940.0
+margin_bottom = 340.0
 color = Color( 0.784314, 0.509804, 0.196078, 0.921569 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1782,8 +1775,8 @@ __meta__ = {
 [node name="CheckAnswerText" type="Label" parent="CheckAnswerDisplay"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 209.0
-margin_bottom = -315.0
+margin_top = 171.0
+margin_bottom = -380.0
 text = "Mauvaise réponse !"
 align = 1
 valign = 1
@@ -1793,9 +1786,9 @@ __meta__ = {
 
 [node name="CheckAnswer" type="Button" parent="."]
 visible = false
-margin_top = 170.0
+margin_top = 130.0
 margin_right = 1929.0
-margin_bottom = 860.0
+margin_bottom = 793.0
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -1845,10 +1838,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -151.253
-margin_top = -189.841
-margin_right = 130.747
-margin_bottom = -121.841
+margin_left = -149.103
+margin_top = -155.071
+margin_right = 132.897
+margin_bottom = -87.0712
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1957,7 +1950,7 @@ position = Vector2( 439.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 8
+frame = 3
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
@@ -1965,7 +1958,7 @@ position = Vector2( 549.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 8
+frame = 3
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
@@ -1973,7 +1966,7 @@ position = Vector2( 659.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
@@ -1981,7 +1974,7 @@ position = Vector2( 769.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
@@ -1989,7 +1982,7 @@ position = Vector2( 879.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
@@ -1997,7 +1990,7 @@ position = Vector2( 989.036, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 6
+frame = 1
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
@@ -2005,7 +1998,6 @@ position = Vector2( 1099.04, 64.3955 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 5
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
@@ -2064,17 +2056,6 @@ pitch_scale = 0.8
 stream = ExtResource( 18 )
 volume_db = -8.0
 pitch_scale = 0.75
-
-[node name="Framerate" type="Label" parent="."]
-margin_top = 130.0
-margin_right = 234.0
-margin_bottom = 58.0
-custom_fonts/font = SubResource( 277 )
-text = "60"
-script = ExtResource( 19 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="button_down" from="Interface/MapChild/Map" to="Interface/MapChild" method="_on_Map_button_down"]
 [connection signal="button_up" from="Interface/MapChild/Map" to="Interface/MapChild" method="_on_Map_button_up"]
 [connection signal="button_down" from="Interface/MapAdult/Map" to="Interface/MapAdult" method="_on_Map_button_down"]

@@ -59,11 +59,11 @@ func _process(delta):
 			_on_Answer_pressed()
 	
 	if Input.is_action_just_pressed("ui_right"):
-		if message < lock and $Interface/Right.disabled == false:
+		if message < lock and $Interface/Right.disabled == false and $Answering.visible == false:
 			_on_Right_pressed()
 	
 	if Input.is_action_just_pressed("ui_left"):
-		if message > 1:
+		if message > 1 and $Answering.visible == false:
 			_on_Left_pressed()
 	
 	if $Interface/Right.disabled:
