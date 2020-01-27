@@ -50,10 +50,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		if $CheckAnswer.visible:
 			_on_CheckAnswer_pressed()
-		if $Answering.visible:
+		if $Answering.visible and $CheckAnswer.visible == false:
 			_on_ValidAnswer_pressed()
-		if $Interface/Answer.visible == true and $Interface/Answer.disabled == false and $CheckAnswer.visible == false:
-			_on_Answer_pressed()
 	
 	if Input.is_action_just_pressed("ui_cancel"):
 		if $CheckAnswer.visible:
