@@ -1526,7 +1526,7 @@ position = Vector2( 1232.4, 672 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 33 )
 animation = "blink"
-frame = 12
+frame = 16
 playing = true
 
 [node name="Answer" type="Button" parent="Interface"]
@@ -1534,9 +1534,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -149.0
-margin_top = -70.0
-margin_right = 158.0
+margin_left = -100.0
+margin_top = -30.0
+margin_right = 100.0
 margin_bottom = 33.0
 focus_mode = 0
 toggle_mode = true
@@ -1640,7 +1640,7 @@ __meta__ = {
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = -1.0
-margin_top = -70.0
+margin_top = -30.0
 margin_right = 296.0
 margin_bottom = 33.0
 focus_mode = 0
@@ -1666,7 +1666,7 @@ visible = false
 position = Vector2( 640, 360 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 94 )
-frame = 2
+frame = 6
 playing = true
 
 [node name="ColorRect" type="Sprite" parent="."]
@@ -1946,68 +1946,68 @@ __meta__ = {
 }
 
 [node name="Ring1" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 439.036, 64.3955 )
+position = Vector2( 439.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 31
+frame = 35
 playing = true
 
 [node name="Ring2" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 549.036, 64.3955 )
+position = Vector2( 549.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 31
+frame = 35
 playing = true
 
 [node name="Ring3" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 659.036, 64.3955 )
+position = Vector2( 659.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 30
+frame = 34
 playing = true
 
 [node name="Ring4" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 769.036, 64.3955 )
+position = Vector2( 769.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 30
+frame = 34
 playing = true
 
 [node name="Ring5" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 879.036, 64.3955 )
+position = Vector2( 879.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 30
+frame = 34
 playing = true
 
 [node name="Ring6" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 989.036, 64.3955 )
+position = Vector2( 989.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 29
+frame = 33
 playing = true
 
 [node name="Ring7" type="AnimatedSprite" parent="Rings"]
-position = Vector2( 1099.04, 64.3955 )
+position = Vector2( 1099.81, 45.0509 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 215 )
 animation = "empty"
-frame = 28
+frame = 32
 playing = true
 
 [node name="Anneaux" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -251.0
-margin_top = 133.0
-margin_right = 510.0
-margin_bottom = 176.0
+margin_left = -249.0
+margin_top = 92.0
+margin_right = 512.0
+margin_bottom = 129.0
 text = "^Anneaux collectés ^"
 align = 1
 __meta__ = {
